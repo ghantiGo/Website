@@ -5,7 +5,7 @@
 # same question, so they are one answer now, split only by rhythm:
 #
 #   recurring — a feriwala comes back every week
-#   occasional — a shibir happens once
+#   occasional — a camp happens once
 #
 # That keeps the customer's mental model at two things, not three. The
 # photographs do the work here; real faces from real lanes beat icon cards, and
@@ -31,6 +31,6 @@ recurring:
       caption: "The knife sharpener who visits your society with his grinding wheel."
 
 occasional:
-  heading: "Shibirs & melas — once"
-  description: "Health, dental, eye and Aadhaar camps. Fairs, exhibitions and society events. Announced before the day — with the ground, the timing, and what to bring — so you can plan around them instead of hearing about it afterwards."
-  organiser_note: "Running a camp or a mela? Post it in the GhantiPlus Organiser app with its date, place and poster. Residents of that area see it in the GhantiPlus app — no printing, no pasting, no loudspeaker round."
+  heading: "Camps — once"
+  description: "Health, eye, dental, Aadhaar and blood donation camps, collection camps, fairs and exhibitions. Announced before the day — with the ground, the timing, and what to bring — so you can plan around them instead of hearing about it afterwards."
+  organiser_note: "Running a camp? Post it in the GhantiPlus Camp app with its date, place and poster. Residents of that area see it in the GhantiPlus app — no printing, no pasting, no loudspeaker round."
