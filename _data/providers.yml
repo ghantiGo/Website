@@ -38,6 +38,7 @@ urban:
 
 rural:
   heading: "In villages — in your gaon"
+  intro: "Coming after Pune."
   items:
     - icon: "🚁"
       title: "Drone spraying"

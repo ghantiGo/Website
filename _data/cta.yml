@@ -1,0 +1,13 @@
+# Closing CTA — one button per side of the marketplace, so the WhatsApp inbox
+# knows who wrote: a resident, a feriwala or tempo seller, or a camp organiser.
+# The hero keeps the single resident button (site.yml whatsapp_message).
+
+buttons:
+  - text: "I'm a resident"
+    message: "Hi GhantiPlus! I live in ____ and want early access."
+
+  - text: "I'm a feriwala / tempo seller"
+    message: "Hi GhantiPlus! I sell ____ and want to join the Partner app."
+
+  - text: "I run camps"
+    message: "Hi GhantiPlus! I run ____ camps and want the GhantiPlus Camp app."

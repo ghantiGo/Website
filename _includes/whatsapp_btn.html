@@ -1,11 +1,12 @@
 {% assign btn_text = include.text | default: site.data.hero.cta_text %}
-{% if site.data.site.whatsapp_message %}
+{% assign wa_message = include.message | default: site.data.site.whatsapp_message %}
+{% if wa_message %}
   {%- comment -%}
     Escape the MESSAGE only. Chaining cgi_escape onto the whole concatenated
     string escapes "https://" into "https%3A%2F%2F", which turns the href into
     a relative link.
   {%- endcomment -%}
-  {% assign wa_text = site.data.site.whatsapp_message | cgi_escape %}
+  {% assign wa_text = wa_message | cgi_escape %}
   {% assign wa_url = 'https://wa.me/' | append: site.data.site.whatsapp_number | append: '?text=' | append: wa_text %}
 {% else %}
   {% assign wa_url = 'https://wa.me/' | append: site.data.site.whatsapp_number %}
