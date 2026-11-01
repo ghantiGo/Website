@@ -148,6 +148,7 @@ layout: default
 
         {% assign rural = site.data.providers.rural %}
         <h3 class="provider-audience-title">{{ rural.heading }}</h3>
+        {% if rural.intro %}<p class="provider-group-description">{{ rural.intro }}</p>{% endif %}
         <div class="use-cases-grid rural-grid">
             {% for item in rural.items %}
             <div class="use-case-card">
@@ -161,11 +162,15 @@ layout: default
     </div>
 </section>
 
-<!-- 5. One action, same as the hero -->
+<!-- 5. One action, same as the hero, with a button per side of the marketplace -->
 <section class="cta-section">
     <div class="container">
         <h2>Get {{ site.data.site.app_name }} early access</h2>
-        {% include whatsapp_btn.html %}
+        <div class="cta-buttons">
+            {% for button in site.data.cta.buttons %}
+            {% include whatsapp_btn.html text=button.text message=button.message %}
+            {% endfor %}
+        </div>
         <p class="cta-subtext">WhatsApp us. We’ll reply within a day to add you to the early access list.</p>
         <p class="cta-location">Limited early access in Pune.</p>
     </div>

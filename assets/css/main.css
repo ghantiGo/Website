@@ -443,6 +443,13 @@ body {
     margin-bottom: 25px;
 }
 
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
 .cta-section .whatsapp-btn {
     font-size: 1.15rem;
     padding: 18px 40px;
