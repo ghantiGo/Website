@@ -15,37 +15,37 @@ customer_subtitle: "In the GhantiPlus app"
 customer_steps:
   - heading: "Pick your area"
     hindi: "अपना इलाका चुनो"
-    description: "Choose your locality, society or village once. The feriwale who come to your lane — kulfi, sabzi, bike wash, chair repair — show up for you, so you stop missing them."
+    description: "Choose your locality, society or village once, and see the feriwale who come to your lane."
 
-  - heading: "Get the ghanti"
-    hindi: "ऐप में घंटी"
-    description: "Open the app to see who is online near your society. When a feriwala rings the bell at your gate, it shows up in the app for the next few minutes."
+  - heading: "See who's near"
+    hindi: "कौन पास है"
+    description: "See which feriwale are online in your locality right now."
 
   - heading: "Walk over"
     hindi: "जाके ले आओ"
-    description: "They're at your gate or chowk. Local prices, no delivery fee, no middleman — and repairing beats replacing."
+    description: "They're in your lane or at the chowk. Local prices, no delivery fee, no middleman."
 
 peddler_title: "For feriwale & tempo sellers"
 peddler_subtitle: "In the GhantiPlus Partner app"
 peddler_steps:
   - heading: "Upload today"
     hindi: "आज का सामान"
-    description: "Share a photo of what you've brought today, or the repairs you can do — so residents know before you arrive."
+    description: "Share a photo of today's goods or the repairs you do, so residents know before you arrive."
 
   - heading: "Record voice"
     hindi: "आवाज़ बोलो"
-    description: "Record a short voice broadcast in your own language and style. Your voice, not a form."
+    description: "Record a short voice message in your own language. Your voice, not a form."
 
   - heading: "Go online"
     hindi: "ऑनलाइन जाओ"
-    description: "Tap Go online when you start your round, and ring the bell when you reach a society's gate. Residents see you — no shouting, no hoping someone hears the bell. More homes hear you, so you sell more on the same round."
+    description: "Tap Go online when you start your round. Residents in the locality see you, so you sell more on the same round."
 
 camp_title: "For camp organisers"
 camp_subtitle: "In the GhantiPlus Camp app"
 camp_steps:
   - heading: "Pick the date and place"
     hindi: "तारीख और जगह"
-    description: "Choose the day or days of your camp, then pick the locality or pin the ground on the map."
+    description: "Choose your camp's dates, then pick the locality or pin the ground on the map."
 
   - heading: "Add a poster and voice"
     hindi: "पोस्टर और आवाज़"
@@ -53,4 +53,4 @@ camp_steps:
 
   - heading: "Publish"
     hindi: "पोस्ट करो"
-    description: "Residents of that area see your camp in the GhantiPlus app before the day. No printing, no pasting, no loudspeaker round."
+    description: "Residents of that area see it before the day. No printing, no pasting, no loudspeaker round."
