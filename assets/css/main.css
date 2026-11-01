@@ -690,6 +690,35 @@ body {
     line-height: 1.6;
 }
 
+/* Audience split inside the providers section: city society gate, village gaon. */
+.provider-audience-title {
+    text-align: center;
+    font-size: 1.45rem;
+    color: #FF6B35;
+    margin: 50px 0 22px;
+}
+
+.provider-audience-title:first-of-type {
+    margin-top: 10px;
+}
+
+.rural-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.use-case-icon {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.use-case-card .use-case-app {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #FF6B35;
+    font-weight: 500;
+}
+
 @media (max-width: 768px) {
     .hero .hero-positioning {
         font-size: 1.15rem;

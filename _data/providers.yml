@@ -1,36 +1,70 @@
 # Providers — everyone who comes to your lane, in one section.
 #
-# Absorbs what used to be three separate sections (use-case cards, photo
-# testimonials, and a standalone Carnival block). They were all answering the
-# same question, so they are one answer now, split only by rhythm:
+# Split by audience first, because a city society and a village are reached
+# differently:
 #
-#   recurring — a feriwala comes back every week
-#   occasional — a camp happens once
-#
-# That keeps the customer's mental model at two things, not three. The
-# photographs do the work here; real faces from real lanes beat icon cards, and
-# they are the only human content on the page.
+#   urban — the society gate: feriwale and tempo sellers every week (real
+#           photos from real lanes), and camps that happen once
+#   rural — the gaon: providers who move village to village (drone spraying,
+#           tractors on hire, pheriwale on cycle) and camps at the panchayat
+#           ground. Text cards only: there are no real rural photos yet, and
+#           the site never fakes one.
 
 title: "Who comes to your lane"
-subtitle: "Some come every week. Some come once. GhantiPlus shows you when either is near your society."
+subtitle: "In a city society or a village — some come every week, some move village to village, some come once. GhantiPlus shows you when they are near."
 
-recurring:
-  heading: "Feriwale — every week"
-  description: "Repair and services (mixer, chair, cycle, bike wash, knife sharpening), fresh food and goods (kulfi, jhalmuri, sabzi, sugarcane, iron kadhai), and the village tempo and service-van rounds."
-  photos:
-    - image: "/assets/images/feriwale/iron-utensils.webp"
-      alt: "Iron utensils seller"
-      caption: "The feriwala who sells iron kadhai and tawas — iron cookware, good for health."
+urban:
+  heading: "In cities — at your society gate"
+  recurring:
+    heading: "Feriwale & tempo sellers — every week"
+    description: "Repair and services (mixer, chair, cycle, bike wash, knife sharpening), fresh food and goods (kulfi, jhalmuri, sabzi, sugarcane, iron kadhai), and the tempo or van that comes round, like the subsidised onion van."
+    photos:
+      - image: "/assets/images/feriwale/iron-utensils.webp"
+        alt: "Iron utensils seller"
+        caption: "The feriwala who sells iron kadhai and tawas — iron cookware, good for health."
 
-    - image: "/assets/images/feriwale/jhalmuri-seller.webp"
-      alt: "Jhalmuri seller with cart"
-      caption: "The jhalmuri wala whose cart brings evening snacks to your chowk."
+      - image: "/assets/images/feriwale/jhalmuri-seller.webp"
+        alt: "Jhalmuri seller with cart"
+        caption: "The jhalmuri wala whose cart brings evening snacks to your chowk."
 
-    - image: "/assets/images/feriwale/knife-sharpner.webp"
-      alt: "Knife sharpener at work"
-      caption: "The knife sharpener who visits your society with his grinding wheel."
+      - image: "/assets/images/feriwale/knife-sharpner.webp"
+        alt: "Knife sharpener at work"
+        caption: "The knife sharpener who visits your society with his grinding wheel."
 
-occasional:
-  heading: "Camps — once"
-  description: "Health, eye, dental, Aadhaar and blood donation camps, collection camps, fairs and exhibitions. Announced before the day — with the ground, the timing, and what to bring — so you can plan around them instead of hearing about it afterwards."
-  organiser_note: "Running a camp? Post it in the GhantiPlus Camp app."
+  occasional:
+    heading: "Camps — once"
+    description: "Health, eye, dental, Aadhaar and blood donation camps, collection camps for old idols and books, fairs and exhibitions. Announced before the day — with the ground, the timing, and what to bring — so you can plan around them instead of hearing about it afterwards."
+    organiser_note: "Running a camp? Post it in the GhantiPlus Camp app."
+
+rural:
+  heading: "In villages — in your gaon"
+  items:
+    - icon: "🚁"
+      title: "Drone spraying"
+      text: "The drone didi sprays a different village each day. See the day she reaches yours, and have your field ready before she moves on."
+      app: "In the GhantiPlus Partner app"
+
+    - icon: "🚜"
+      title: "Tractor & harvester on hire"
+      text: "At sowing and harvest the machine goes village to village. Know when it is near your fields."
+      app: "In the GhantiPlus Partner app"
+
+    - icon: "🧺"
+      title: "Pheriwale on cycle"
+      text: "The bangle seller, the kalai wala who re-tins brass pots, the fish seller, the kulfi cycle — know their day in your gaon."
+      app: "In the GhantiPlus Partner app"
+
+    - icon: "🐄"
+      title: "Pashu camps"
+      text: "Veterinary and vaccination camps for cattle, announced before the day."
+      app: "In the GhantiPlus Camp app"
+
+    - icon: "🩺"
+      title: "Health & Aadhaar camps"
+      text: "At the school or panchayat ground — know the date, the timing and what to bring."
+      app: "In the GhantiPlus Camp app"
+
+    - icon: "🌱"
+      title: "Soil testing camps"
+      text: "Test your soil before sowing, on the day the camp reaches your gram panchayat."
+      app: "In the GhantiPlus Camp app"

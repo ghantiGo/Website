@@ -7,7 +7,7 @@ layout: default
     1. Hero        — what it is, and one thing to do
     2. Problem     — why the old ghanti stopped reaching (+ the story video)
     3. How it works— the ONLY split by app: resident, Partner, Camp
-    4. Providers   — everyone who comes to your lane, recurring and one-off
+    4. Providers   — everyone who comes to your lane, urban and rural
     5. CTA         — the same single action as the hero
 
   This replaced a ten-section page that split customer/provider twice in a row
@@ -120,16 +120,19 @@ layout: default
     </div>
 </section>
 
-<!-- 4. Providers — recurring and one-off, one idea -->
+<!-- 4. Providers — split by audience: urban society gate, rural gaon -->
 <section class="section section-warm providers-section">
     <div class="container">
         <h2>{{ site.data.providers.title }}</h2>
         <p class="section-subtitle">{{ site.data.providers.subtitle }}</p>
 
-        <h3 class="provider-group-title">{{ site.data.providers.recurring.heading }}</h3>
-        <p class="provider-group-description">{{ site.data.providers.recurring.description }}</p>
+        {% assign urban = site.data.providers.urban %}
+        <h3 class="provider-audience-title">{{ urban.heading }}</h3>
+
+        <h3 class="provider-group-title">{{ urban.recurring.heading }}</h3>
+        <p class="provider-group-description">{{ urban.recurring.description }}</p>
         <div class="use-cases-grid">
-            {% for photo in site.data.providers.recurring.photos %}
+            {% for photo in urban.recurring.photos %}
             <div class="use-case-card">
                 <div class="use-case-photo">
                     <img src="{{ photo.image }}" alt="{{ photo.alt }}" loading="lazy">
@@ -139,9 +142,22 @@ layout: default
             {% endfor %}
         </div>
 
-        <h3 class="provider-group-title">{{ site.data.providers.occasional.heading }}</h3>
-        <p class="provider-group-description">{{ site.data.providers.occasional.description }}</p>
-        <p class="provider-organiser-note">{{ site.data.providers.occasional.organiser_note }}</p>
+        <h3 class="provider-group-title">{{ urban.occasional.heading }}</h3>
+        <p class="provider-group-description">{{ urban.occasional.description }}</p>
+        <p class="provider-organiser-note">{{ urban.occasional.organiser_note }}</p>
+
+        {% assign rural = site.data.providers.rural %}
+        <h3 class="provider-audience-title">{{ rural.heading }}</h3>
+        <div class="use-cases-grid rural-grid">
+            {% for item in rural.items %}
+            <div class="use-case-card">
+                <span class="use-case-icon" aria-hidden="true">{{ item.icon }}</span>
+                <h4>{{ item.title }}</h4>
+                <p>{{ item.text }}</p>
+                <p class="use-case-app">{{ item.app }}</p>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </section>
 
