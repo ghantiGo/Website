@@ -206,17 +206,6 @@ body {
     opacity: 0.85;
 }
 
-.hero .early-access-badge {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 8px 18px;
-    border-radius: 50px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    margin-bottom: 18px;
-}
-
 /* Section Base */
 .section {
     padding: 70px 20px;
@@ -461,12 +450,6 @@ body {
     opacity: 0.9;
 }
 
-.cta-location {
-    margin-top: 10px;
-    font-size: 1rem;
-    opacity: 0.85;
-}
-
 /* Footer */
 .footer {
     background: #2D2D2D;
@@ -601,11 +584,6 @@ body {
 
     .use-case-card p {
         font-size: 0.9rem;
-    }
-
-    .hero .early-access-badge {
-        font-size: 0.85rem;
-        padding: 6px 14px;
     }
 
     .flow-step {

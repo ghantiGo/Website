@@ -11,17 +11,17 @@
 #           the site never fakes one.
 
 title: "Who comes to your lane"
-subtitle: "In a city society or a village — some come every week, some move village to village, some come once. GhantiPlus shows you when they are near."
+subtitle: "Some come every week, some go village to village, some come once. GhantiPlus shows you when they're near."
 
 urban:
   heading: "In cities — at your society gate"
   recurring:
     heading: "Feriwale & tempo sellers — every week"
-    description: "Repair and services (mixer, chair, cycle, bike wash, knife sharpening), fresh food and goods (kulfi, jhalmuri, sabzi, sugarcane, iron kadhai), and the tempo or van that comes round, like the subsidised onion van."
+    description: "Mixer, chair and cycle repair, bike wash, knife sharpening, kulfi, jhalmuri, sabzi, iron kadhai — and the tempo or van that comes round, like the government onion van."
     photos:
       - image: "/assets/images/feriwale/iron-utensils.webp"
         alt: "Iron utensils seller"
-        caption: "The feriwala who sells iron kadhai and tawas — iron cookware, good for health."
+        caption: "The feriwala who sells iron kadhai and tawas — good for health."
 
       - image: "/assets/images/feriwale/jhalmuri-seller.webp"
         alt: "Jhalmuri seller with cart"
@@ -33,39 +33,39 @@ urban:
 
   occasional:
     heading: "Camps — once"
-    description: "Health, eye, dental, Aadhaar and blood donation camps, collection camps for old idols and books, fairs and exhibitions. Announced before the day — with the ground, the timing, and what to bring — so you can plan around them instead of hearing about it afterwards."
+    description: "Health, eye, dental, Aadhaar and blood donation camps, collection camps for old idols and books, fairs and exhibitions — announced before the day, with the place, time and what to bring."
     organiser_note: "Running a camp? Post it in the GhantiPlus Camp app."
 
 rural:
-  heading: "In villages — in your gaon"
+  heading: "In villages"
   intro: "Coming after Pune."
   items:
     - icon: "🚁"
       title: "Drone spraying"
-      text: "The drone didi sprays a different village each day. See the day she reaches yours, and have your field ready before she moves on."
-      app: "In the GhantiPlus Partner app"
+      text: "The drone didi sprays a different village each day. Know when she reaches yours, and have your field ready."
+      app: "GhantiPlus Partner"
 
     - icon: "🚜"
       title: "Tractor & harvester on hire"
       text: "At sowing and harvest the machine goes village to village. Know when it is near your fields."
-      app: "In the GhantiPlus Partner app"
+      app: "GhantiPlus Partner"
 
     - icon: "🧺"
       title: "Feriwale on cycle"
       text: "The bangle seller, the kalai wala who re-tins brass pots, the fish seller, the kulfi cycle — know their day in your gaon."
-      app: "In the GhantiPlus Partner app"
+      app: "GhantiPlus Partner"
 
     - icon: "🐄"
       title: "Pashu camps"
       text: "Veterinary and vaccination camps for cattle, announced before the day."
-      app: "In the GhantiPlus Camp app"
+      app: "GhantiPlus Camp"
 
     - icon: "🩺"
       title: "Health & Aadhaar camps"
-      text: "At the school or panchayat ground — know the date, the timing and what to bring."
-      app: "In the GhantiPlus Camp app"
+      text: "At the school or panchayat ground — know the date, time and what to bring."
+      app: "GhantiPlus Camp"
 
     - icon: "🌱"
       title: "Soil testing camps"
       text: "Test your soil before sowing, on the day the camp reaches your gram panchayat."
-      app: "In the GhantiPlus Camp app"
+      app: "GhantiPlus Camp"
