@@ -19,22 +19,22 @@ customer_steps:
 
   - heading: "See who's near"
     hindi: "कौन पास है"
-    description: "See which feriwale are online in your locality right now."
+    description: "See who is online in your locality, with today's photos, voice note and stops."
 
   - heading: "Walk over"
     hindi: "जाके ले आओ"
-    description: "They're in your lane or at the chowk. Local prices, no delivery fee, no middleman."
+    description: "Send a short message about today's post, then walk over. Local prices, no delivery fee, no middleman."
 
 peddler_title: "For feriwale & tempo sellers"
 peddler_subtitle: "In the GhantiPlus Partner app"
 peddler_steps:
-  - heading: "Upload today"
-    hindi: "आज का सामान"
-    description: "Share a photo of today's goods or the repairs you do, so residents know before you arrive."
+  - heading: "Photos & voice note"
+    hindi: "फोटो और आवाज़"
+    description: "Post photos of today's goods and a short voice note in your own language."
 
-  - heading: "Record voice"
-    hindi: "आवाज़ बोलो"
-    description: "Record a short voice message in your own language. Your voice, not a form."
+  - heading: "Today's stops"
+    hindi: "आज के स्टॉप"
+    description: "Draw your route or pick your stands, so residents know where you'll be."
 
   - heading: "Go online"
     hindi: "ऑनलाइन जाओ"
@@ -49,7 +49,7 @@ camp_steps:
 
   - heading: "Add a poster and voice"
     hindi: "पोस्टर और आवाज़"
-    description: "Add photos or make a poster, and record a short voice message in your own language."
+    description: "Add photos or make a poster, and record a short voice note in your own language."
 
   - heading: "Publish"
     hindi: "पोस्ट करो"
