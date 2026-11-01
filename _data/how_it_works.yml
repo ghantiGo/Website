@@ -8,7 +8,7 @@
 # explained that should be shown instead.
 
 title: "How GhantiPlus works"
-subtitle: "Feriwale go online. Camps announce ahead. Residents get the ghanti."
+subtitle: "Feriwale and camps plan their days, and go online on the day. Residents get the ghanti."
 
 customer_title: "For residents"
 customer_subtitle: "In the GhantiPlus app"
@@ -17,13 +17,13 @@ customer_steps:
     hindi: "अपना इलाका चुनो"
     description: "Choose your locality, society or village once, and see the feriwale who come to your lane."
 
-  - heading: "See who's near"
-    hindi: "कौन पास है"
-    description: "See who is online in your locality, with today's photos, voice note and stops."
+  - heading: "Now and upcoming"
+    hindi: "अभी और आने वाले"
+    description: "See who is online now, and the upcoming ones with their date — photos, voice note and stops."
 
   - heading: "Walk over"
     hindi: "जाके ले आओ"
-    description: "Send a short message about today's post, then walk over. Local prices, no delivery fee, no middleman."
+    description: "Send a short message about their post, then walk over when they are here. Local prices, no delivery fee, no middleman."
 
 peddler_title: "For feriwale & tempo sellers"
 peddler_subtitle: "In the GhantiPlus Partner app"
@@ -32,13 +32,13 @@ peddler_steps:
     hindi: "फोटो और आवाज़"
     description: "Post photos of today's goods and a short voice note in your own language."
 
-  - heading: "Today's stops"
-    hindi: "आज के स्टॉप"
-    description: "Draw your route or pick your stands, so residents know where you'll be."
+  - heading: "Plan your days"
+    hindi: "अपने दिन तय करो"
+    description: "Pick a date, then draw your route or pick your stands. Residents see you as upcoming."
 
   - heading: "Go online"
     hindi: "ऑनलाइन जाओ"
-    description: "Tap Go online when you start your round. Residents in the locality see you, so you sell more on the same round."
+    description: "On the day, tap Go online when you start your round. Residents see you are here, so you sell more on the same round."
 
 camp_title: "For camp organisers"
 camp_subtitle: "In the GhantiPlus Camp app"
@@ -53,4 +53,4 @@ camp_steps:
 
   - heading: "Publish"
     hindi: "पोस्ट करो"
-    description: "Residents of that area see it before the day. No printing, no pasting, no loudspeaker round."
+    description: "Residents of that area see it as upcoming, with the date. On the day, tap We're open so they know it's on. No printing, no pasting, no loudspeaker round."
