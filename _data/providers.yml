@@ -6,7 +6,7 @@
 #   urban — the society gate: feriwale and tempo sellers every week (real
 #           photos from real lanes), and camps that happen once
 #   rural — the gaon: providers who move village to village (drone spraying,
-#           tractors on hire, pheriwale on cycle) and camps at the panchayat
+#           tractors on hire, feriwale on cycle) and camps at the panchayat
 #           ground. Text cards only: there are no real rural photos yet, and
 #           the site never fakes one.
 
@@ -50,7 +50,7 @@ rural:
       app: "In the GhantiPlus Partner app"
 
     - icon: "🧺"
-      title: "Pheriwale on cycle"
+      title: "Feriwale on cycle"
       text: "The bangle seller, the kalai wala who re-tins brass pots, the fish seller, the kulfi cycle — know their day in your gaon."
       app: "In the GhantiPlus Partner app"
 

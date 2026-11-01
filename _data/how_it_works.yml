@@ -10,12 +10,12 @@
 title: "How GhantiPlus works"
 subtitle: "Feriwale go online. Camps announce ahead. Residents get the ghanti."
 
-customer_title: "For customers"
+customer_title: "For residents"
 customer_subtitle: "In the GhantiPlus app"
 customer_steps:
   - heading: "Pick your area"
     hindi: "अपना इलाका चुनो"
-    description: "Choose your locality or society once. The feriwale who come to your lane — kulfi, sabzi, bike wash, chair repair — show up for you, so you stop missing them."
+    description: "Choose your locality, society or village once. The feriwale who come to your lane — kulfi, sabzi, bike wash, chair repair — show up for you, so you stop missing them."
 
   - heading: "Get the ghanti"
     hindi: "ऐप में घंटी"
@@ -30,7 +30,7 @@ peddler_subtitle: "In the GhantiPlus Partner app"
 peddler_steps:
   - heading: "Upload today"
     hindi: "आज का सामान"
-    description: "Share a photo of what you've brought today, or the repairs you can do — so customers know before you arrive."
+    description: "Share a photo of what you've brought today, or the repairs you can do — so residents know before you arrive."
 
   - heading: "Record voice"
     hindi: "आवाज़ बोलो"
@@ -38,7 +38,7 @@ peddler_steps:
 
   - heading: "Go online"
     hindi: "ऑनलाइन जाओ"
-    description: "Tap Go online when you start your round, and ring the bell when you reach a society's gate. Residents see you — no shouting, no hoping someone hears the bell."
+    description: "Tap Go online when you start your round, and ring the bell when you reach a society's gate. Residents see you — no shouting, no hoping someone hears the bell. More homes hear you, so you sell more on the same round."
 
 camp_title: "For camp organisers"
 camp_subtitle: "In the GhantiPlus Camp app"
