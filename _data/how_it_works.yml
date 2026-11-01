@@ -1,4 +1,4 @@
-# How It Works — the ONE place the customer/provider split lives.
+# How It Works — the ONE place the split by app lives: resident, Partner, Camp.
 #
 # It used to appear twice: a Benefits grid split by persona, then this section
 # split by persona again, back to back. Same division, overlapping content, no
@@ -8,14 +8,14 @@
 # explained that should be shown instead.
 
 title: "How GhantiPlus works"
-subtitle: "Two sides of the same lane. Feriwale go online. Residents get the ghanti."
+subtitle: "Feriwale go online. Camps announce ahead. Residents get the ghanti."
 
-customer_title: "For customers"
+customer_title: "For residents"
 customer_subtitle: "In the GhantiPlus app"
 customer_steps:
   - heading: "Pick your area"
     hindi: "अपना इलाका चुनो"
-    description: "Choose your locality or society once. The feriwale who come to your lane — kulfi, sabzi, bike wash, chair repair — show up for you, so you stop missing them."
+    description: "Choose your locality, society or village once. The feriwale who come to your lane — kulfi, sabzi, bike wash, chair repair — show up for you, so you stop missing them."
 
   - heading: "Get the ghanti"
     hindi: "ऐप में घंटी"
@@ -25,12 +25,12 @@ customer_steps:
     hindi: "जाके ले आओ"
     description: "They're at your gate or chowk. Local prices, no delivery fee, no middleman — and repairing beats replacing."
 
-peddler_title: "For feriwale & service providers"
+peddler_title: "For feriwale & tempo sellers"
 peddler_subtitle: "In the GhantiPlus Partner app"
 peddler_steps:
   - heading: "Upload today"
     hindi: "आज का सामान"
-    description: "Share a photo of what you've brought today, or the repairs you can do — so customers know before you arrive."
+    description: "Share a photo of what you've brought today, or the repairs you can do — so residents know before you arrive."
 
   - heading: "Record voice"
     hindi: "आवाज़ बोलो"
@@ -38,4 +38,19 @@ peddler_steps:
 
   - heading: "Go online"
     hindi: "ऑनलाइन जाओ"
-    description: "Tap Go online when you start your round, and ring the bell when you reach a society's gate. Residents see you — no shouting, no hoping someone hears the bell."
+    description: "Tap Go online when you start your round, and ring the bell when you reach a society's gate. Residents see you — no shouting, no hoping someone hears the bell. More homes hear you, so you sell more on the same round."
+
+camp_title: "For camp organisers"
+camp_subtitle: "In the GhantiPlus Camp app"
+camp_steps:
+  - heading: "Pick the date and place"
+    hindi: "तारीख और जगह"
+    description: "Choose the day or days of your camp, then pick the locality or pin the ground on the map."
+
+  - heading: "Add a poster and voice"
+    hindi: "पोस्टर और आवाज़"
+    description: "Add photos or make a poster, and record a short voice message in your own language."
+
+  - heading: "Publish"
+    hindi: "पोस्ट करो"
+    description: "Residents of that area see your camp in the GhantiPlus app before the day. No printing, no pasting, no loudspeaker round."
