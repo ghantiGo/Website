@@ -316,9 +316,9 @@ body {
 /* How It Works */
 .how-it-works-section .dual-flow {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 35px;
-    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1060px;
     margin: 0 auto;
 }
 

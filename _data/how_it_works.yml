@@ -1,4 +1,4 @@
-# How It Works — the ONE place the customer/provider split lives.
+# How It Works — the ONE place the split by app lives: resident, Partner, Camp.
 #
 # It used to appear twice: a Benefits grid split by persona, then this section
 # split by persona again, back to back. Same division, overlapping content, no
@@ -8,7 +8,7 @@
 # explained that should be shown instead.
 
 title: "How GhantiPlus works"
-subtitle: "Two sides of the same lane. Feriwale go online. Residents get the ghanti."
+subtitle: "Feriwale go online. Camps announce ahead. Residents get the ghanti."
 
 customer_title: "For customers"
 customer_subtitle: "In the GhantiPlus app"
@@ -39,3 +39,18 @@ peddler_steps:
   - heading: "Go online"
     hindi: "ऑनलाइन जाओ"
     description: "Tap Go online when you start your round, and ring the bell when you reach a society's gate. Residents see you — no shouting, no hoping someone hears the bell."
+
+camp_title: "For camp organisers"
+camp_subtitle: "In the GhantiPlus Camp app"
+camp_steps:
+  - heading: "Pick the date and place"
+    hindi: "तारीख और जगह"
+    description: "Choose the day or days of your camp, then pick the locality or pin the ground on the map."
+
+  - heading: "Add a poster and voice"
+    hindi: "पोस्टर और आवाज़"
+    description: "Add photos or make a poster, and record a short voice message in your own language."
+
+  - heading: "Publish"
+    hindi: "पोस्ट करो"
+    description: "Residents of that area see your camp in the GhantiPlus app before the day. No printing, no pasting, no loudspeaker round."

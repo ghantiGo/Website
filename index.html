@@ -6,7 +6,7 @@ layout: default
 
     1. Hero        — what it is, and one thing to do
     2. Problem     — why the old ghanti stopped reaching (+ the story video)
-    3. How it works— the ONLY customer/provider split on the page
+    3. How it works— the ONLY split by app: resident, Partner, Camp
     4. Providers   — everyone who comes to your lane, recurring and one-off
     5. CTA         — the same single action as the hero
 
@@ -59,7 +59,7 @@ layout: default
     </div>
 </section>
 
-<!-- 3. How it works — the one and only persona split -->
+<!-- 3. How it works — the one split by app: resident, Partner, Camp -->
 <section class="section section-white how-it-works-section">
     <div class="container">
         <h2>{{ site.data.how_it_works.title }}</h2>
@@ -88,6 +88,23 @@ layout: default
                 <p class="persona-app-label">{{ site.data.how_it_works.peddler_subtitle }}</p>
                 <div class="flow-steps">
                     {% for step in site.data.how_it_works.peddler_steps %}
+                    <div class="flow-step">
+                        <div class="step-number">0{{ forloop.index }}</div>
+                        <div class="step-content">
+                            <h4>{{ step.heading }}</h4>
+                            <p class="hindi">{{ step.hindi }}</p>
+                            <p>{{ step.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="flow-block">
+                <h3 class="flow-block-title">{{ site.data.how_it_works.camp_title }}</h3>
+                <p class="persona-app-label">{{ site.data.how_it_works.camp_subtitle }}</p>
+                <div class="flow-steps">
+                    {% for step in site.data.how_it_works.camp_steps %}
                     <div class="flow-step">
                         <div class="step-number">0{{ forloop.index }}</div>
                         <div class="step-content">
