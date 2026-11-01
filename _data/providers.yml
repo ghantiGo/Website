@@ -11,7 +11,7 @@
 #           the site never fakes one.
 
 title: "Who comes to your lane"
-subtitle: "Some come every week, some go village to village, some come once. GhantiPlus shows you when they're near."
+subtitle: "Some come every week, some go village to village, some come once. GhantiPlus shows you which day they come, and when they're here."
 
 urban:
   heading: "In cities — at your society gate"
@@ -42,12 +42,12 @@ rural:
   items:
     - icon: "🚁"
       title: "Drone spraying"
-      text: "The drone didi sprays a different village each day. Know when she reaches yours, and have your field ready."
+      text: "The drone didi sprays a different village each day. See which day she comes to yours, and have your field ready."
       app: "GhantiPlus Partner"
 
     - icon: "🚜"
       title: "Tractor & harvester on hire"
-      text: "At sowing and harvest the machine goes village to village. Know when it is near your fields."
+      text: "At sowing and harvest the machine goes village to village. See which day it reaches your fields."
       app: "GhantiPlus Partner"
 
     - icon: "🧺"
