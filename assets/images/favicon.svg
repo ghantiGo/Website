@@ -1,4 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="50" fill="#FF6B35"/>
-  <path d="M50 22c-3 0-5 2-5 5v3c-8 2-14 9-14 18v18l-4 4h46l-4-4V48c0-9-6-16-14-18v-3c0-3-2-5-5-5zm-5 42h10v4H45v-4z" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <path id="pin" d="M512 460 L428.1 361.2 A110 110 0 1 1 595.9 361.2 Z"/>
+    <mask id="bell-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="#fff"/>
+      <use href="#pin" fill="#000" stroke="#000" stroke-width="80" stroke-linejoin="round"/>
+    </mask>
+    <mask id="pin-hole" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="#fff"/>
+      <circle cx="512" cy="290" r="44" fill="#000"/>
+    </mask>
+  </defs>
+  <circle cx="512" cy="512" r="512" fill="#A50D1C"/>
+  <g fill="#fff">
+    <g mask="url(#bell-cut)">
+      <path d="M512 400C600 400 640 450 645 540C650 640 690 690 760 720H264C334 690 374 640 379 540C384 450 424 400 512 400Z"/>
+      <rect x="240" y="716" width="544" height="48" rx="24"/>
+    </g>
+    <use href="#pin" mask="url(#pin-hole)"/>
+    <path d="M452 800A60 60 0 0 0 572 800Z"/>
+  </g>
 </svg>

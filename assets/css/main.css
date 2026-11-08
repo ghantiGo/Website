@@ -45,7 +45,8 @@ body {
 }
 
 .nav-brand-icon {
-    font-size: 1.3rem;
+    width: 28px;
+    height: 28px;
 }
 
 .site-nav .nav-links {

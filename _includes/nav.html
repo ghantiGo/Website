@@ -1,7 +1,7 @@
 <nav class="site-nav {% if page.layout == 'legal' %}nav-solid{% endif %}">
     <div class="container">
         <a href="{{ '/' | relative_url }}" class="nav-brand">
-            <span class="nav-brand-icon">🛎️</span>{{ site.data.site.brand_name }}
+            <img class="nav-brand-icon" src="{{ '/assets/images/favicon.svg' | relative_url }}" alt="" width="28" height="28">{{ site.data.site.brand_name }}
         </a>
         <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('active')">
             <span></span>
