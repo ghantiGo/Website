@@ -11,7 +11,7 @@
 #           the site never fakes one.
 
 title: "Who comes to your lane"
-subtitle: "Some come every week, some go village to village, some come once. GhantiPlus shows you which day they come, and when they're here."
+subtitle: "Some come every week, some go village to village, some come once. GhantiGo shows you which day they come, and when they're here."
 
 urban:
   heading: "In cities — at your society gate"
@@ -34,7 +34,7 @@ urban:
   occasional:
     heading: "Camps — once"
     description: "Health, eye, dental, Aadhaar and blood donation camps, collection camps for old idols and books, fairs and exhibitions — announced before the day, with the place, time and what to bring."
-    organiser_note: "Running a camp? Post it in the GhantiPlus Camp app."
+    organiser_note: "Running a camp? Post it in the GhantiGo Camp app."
 
 rural:
   heading: "In villages"
@@ -43,29 +43,29 @@ rural:
     - icon: "🚁"
       title: "Drone spraying"
       text: "The drone didi sprays a different village each day. See which day she comes to yours, and have your field ready."
-      app: "GhantiPlus Partner"
+      app: "GhantiGo Partner"
 
     - icon: "🚜"
       title: "Tractor & harvester on hire"
       text: "At sowing and harvest the machine goes village to village. See which day it reaches your fields."
-      app: "GhantiPlus Partner"
+      app: "GhantiGo Partner"
 
     - icon: "🧺"
       title: "Feriwale on cycle"
       text: "The bangle seller, the kalai wala who re-tins brass pots, the fish seller, the kulfi cycle — know their day in your gaon."
-      app: "GhantiPlus Partner"
+      app: "GhantiGo Partner"
 
     - icon: "🐄"
       title: "Pashu camps"
       text: "Veterinary and vaccination camps for cattle, announced before the day."
-      app: "GhantiPlus Camp"
+      app: "GhantiGo Camp"
 
     - icon: "🩺"
       title: "Health & Aadhaar camps"
       text: "At the school or panchayat ground — know the date, time and what to bring."
-      app: "GhantiPlus Camp"
+      app: "GhantiGo Camp"
 
     - icon: "🌱"
       title: "Soil testing camps"
       text: "Test your soil before sowing, on the day the camp reaches your gram panchayat."
-      app: "GhantiPlus Camp"
+      app: "GhantiGo Camp"

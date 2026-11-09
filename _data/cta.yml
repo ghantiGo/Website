@@ -4,10 +4,10 @@
 
 buttons:
   - text: "I'm a resident"
-    message: "Hi GhantiPlus! I live in ____ and want early access."
+    message: "Hi GhantiGo! I live in ____ and want early access."
 
   - text: "I'm a feriwala / tempo seller"
-    message: "Hi GhantiPlus! I sell ____ and want to join the Partner app."
+    message: "Hi GhantiGo! I sell ____ and want to join the Partner app."
 
   - text: "I run camps"
-    message: "Hi GhantiPlus! I run ____ camps and want the GhantiPlus Camp app."
+    message: "Hi GhantiGo! I run ____ camps and want the GhantiGo Camp app."
