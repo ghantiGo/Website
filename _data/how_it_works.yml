@@ -7,11 +7,11 @@
 # doing. Three steps a side is the ceiling; a fourth means something is being
 # explained that should be shown instead.
 
-title: "How GhantiPlus works"
+title: "How GhantiGo works"
 subtitle: "Feriwale and camps plan ahead, then go online on the day. Residents get the ghanti."
 
 customer_title: "For residents"
-customer_subtitle: "In the GhantiPlus app"
+customer_subtitle: "In the GhantiGo app"
 customer_steps:
   - heading: "Pick your area"
     hindi: "अपना इलाका चुनो"
@@ -26,7 +26,7 @@ customer_steps:
     description: "Message them, then walk over. Local prices, no delivery fee, no middleman."
 
 peddler_title: "For feriwale & tempo sellers"
-peddler_subtitle: "In the GhantiPlus Partner app"
+peddler_subtitle: "In the GhantiGo Partner app"
 peddler_steps:
   - heading: "Photos & voice note"
     hindi: "फोटो और आवाज़"
@@ -41,7 +41,7 @@ peddler_steps:
     description: "On the day, tap Go online. Residents see you're here — before the kulfi melts."
 
 camp_title: "For camp organisers"
-camp_subtitle: "In the GhantiPlus Camp app"
+camp_subtitle: "In the GhantiGo Camp app"
 camp_steps:
   - heading: "Pick the date and place"
     hindi: "तारीख और जगह"

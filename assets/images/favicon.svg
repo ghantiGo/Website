@@ -1,22 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <defs>
-    <path id="pin" d="M512 460 L428.1 361.2 A110 110 0 1 1 595.9 361.2 Z"/>
-    <mask id="bell-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
-      <rect width="1024" height="1024" fill="#fff"/>
-      <use href="#pin" fill="#000" stroke="#000" stroke-width="80" stroke-linejoin="round"/>
-    </mask>
-    <mask id="pin-hole" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
-      <rect width="1024" height="1024" fill="#fff"/>
-      <circle cx="512" cy="290" r="44" fill="#000"/>
-    </mask>
-  </defs>
-  <circle cx="512" cy="512" r="512" fill="#A50D1C"/>
-  <g fill="#fff">
-    <g mask="url(#bell-cut)">
-      <path d="M512 400C600 400 640 450 645 540C650 640 690 690 760 720H264C334 690 374 640 379 540C384 450 424 400 512 400Z"/>
-      <rect x="240" y="716" width="544" height="48" rx="24"/>
-    </g>
-    <use href="#pin" mask="url(#pin-hole)"/>
-    <path d="M452 800A60 60 0 0 0 572 800Z"/>
+  <rect width="1024" height="1024" rx="230" fill="#E0563B"/>
+  <path fill="#FFFFFF" d="M512 860 C468 800 238 640 238 430 C238 280 360 166 512 166 C664 166 786 280 786 430 C786 640 556 800 512 860 Z"/>
+  <g fill="#E0563B" transform="rotate(-14 512 440)">
+    <path d="M512 284 C600 284 636 344 638 414 L640 462 C642 490 668 500 690 512 C712 524 704 548 680 548 L344 548 C320 548 312 524 334 512 C356 500 382 490 384 462 L386 414 C388 344 424 284 512 284 Z"/>
+    <circle cx="512" cy="636" r="44"/>
   </g>
 </svg>
