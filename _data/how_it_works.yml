@@ -11,35 +11,35 @@ title: "How the lane gets its timetable"
 subtitle: "Feriwale and camps tell your area when they are coming. Residents read the timetable."
 
 customer_title: "For residents"
-customer_subtitle: "In the GhantiGo app"
+customer_subtitle: "In the GhantiGo app. Free. Sign in with your phone number."
 customer_steps:
   - heading: "Pick your area"
     hindi: "अपना इलाका चुनो"
-    description: "Choose your locality, society or village once, and see the feriwale who come to your lane."
+    description: "Choose your area once, then your society (add it if it is not listed), and see the feriwale who come to your lane."
 
   - heading: "Who's coming, and where"
     hindi: "कौन आएगा, कहाँ दिखा"
-    description: "Today's photos, voice note and stops — who is coming today, and where each was last seen."
+    description: "Photos, a voice note and stops for who is coming today and in the days ahead. For today you see where each was last seen, and how many minutes ago. It opens on weak signal, and you can report a photo or voice note."
 
   - heading: "Walk over"
     hindi: "जाके ले आओ"
-    description: "Message them, then walk over. Straight from the seller, at their own price."
+    description: "Ask them to stop at your society, and add a short note if you like. You see how many neighbours asked. Then walk over. Straight from the seller, at their own price."
 
 peddler_title: "For feriwale & tempo sellers"
-peddler_subtitle: "In the GhantiGo Partner app"
-peddler_plan_note: "Joining is free. Pro, a paid upgrade that lets you plan up to a week ahead, is coming soon."
+peddler_subtitle: "In the GhantiGo Partner app, in English and Hindi"
+peddler_plan_note: "Joining is free. Our local team can check you in person for a Verified badge, and we keep no documents. Pro, a paid upgrade that lets you plan up to a week ahead, is coming soon."
 peddler_steps:
   - heading: "Photos & voice note"
     hindi: "फोटो और आवाज़"
-    description: "Post photos of your goods and a short voice note in your own language."
+    description: "Post up to 2 photos of your goods and a short voice note each day, in your own language. We check each one and tell you if it needs retaking."
 
   - heading: "Plan your day"
     hindi: "अपना दिन तय करो"
-    description: "Pick today's route or stands. Residents see you're coming."
+    description: "Tap today's route or stands on the map. No typing. Residents see you're coming."
 
   - heading: "Go online"
     hindi: "ऑनलाइन जाओ"
-    description: "On the day, tap Go online. Residents see where you were last seen — before the kulfi melts."
+    description: "On the day, tap Go online in an area we cover. Residents see where you were last seen — before the kulfi melts. Your day ends when you go offline, or at midnight."
 
 camp_title: "For camp organisers"
 camp_subtitle: "In the GhantiGo Camp app"
@@ -50,8 +50,8 @@ camp_steps:
 
   - heading: "Add a poster and voice"
     hindi: "पोस्टर और आवाज़"
-    description: "Add photos or make a poster, and record a short voice note in your own language."
+    description: "Add up to 3 photos or make a poster, and record a short voice note in your own language."
 
   - heading: "Publish"
     hindi: "पोस्ट करो"
-    description: "The area sees it, with the date. On the day, tap We're open."
+    description: "After a quick check, the area sees it, with the date. Save a draft, change the dates, copy an old camp, or take it down any time."

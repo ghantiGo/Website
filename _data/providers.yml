@@ -5,8 +5,7 @@
 #
 #   urban — the society gate: feriwale and tempo sellers every week (real
 #           photos from real lanes), and camps that happen once
-#   rural — the gaon: providers who move village to village (drone spraying,
-#           tractors on hire, feriwale on cycle) and camps at the panchayat
+#   rural — the gaon: providers who move village to village (feriwale on cycle) and camps at the panchayat
 #           ground. Text cards only: there are no real rural photos yet, and
 #           the site never fakes one.
 
@@ -40,14 +39,6 @@ rural:
   heading: "In villages — Gaon ka timetable"
   intro: "Coming to villages after Pune."
   items:
-    - icon: "🚁"
-      title: "Drone spraying"
-      text: "The drone didi sprays a different village each day. See which day she comes to yours, and have your field ready."
-
-    - icon: "🚜"
-      title: "Tractor & harvester on hire"
-      text: "At sowing and harvest the machine goes village to village. See which day it reaches your fields."
-
     - icon: "🧺"
       title: "Feriwale on cycle"
       text: "The bangle seller, the kalai wala who re-tins brass pots, the fish seller, the kulfi cycle — know their day in your gaon."
@@ -59,7 +50,3 @@ rural:
     - icon: "🩺"
       title: "Health & Aadhaar camps"
       text: "At the school or panchayat ground — know the date, time and what to bring."
-
-    - icon: "🌱"
-      title: "Soil testing camps"
-      text: "Test your soil before sowing, on the day the camp reaches your gram panchayat."
