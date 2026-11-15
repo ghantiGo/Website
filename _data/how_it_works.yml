@@ -19,11 +19,11 @@ customer_steps:
 
   - heading: "Who's coming, and where"
     hindi: "कौन आएगा, कहाँ दिखा"
-    description: "Today's photos, voice note and stops — which day each one comes, and where he was last seen today."
+    description: "Today's photos, voice note and stops — who is coming today, and where each was last seen."
 
   - heading: "Walk over"
     hindi: "जाके ले आओ"
-    description: "Message them, then walk over. Local prices, no delivery fee, no middleman."
+    description: "Message them, then walk over. Straight from the seller, at their own price."
 
 peddler_title: "For feriwale & tempo sellers"
 peddler_subtitle: "In the GhantiGo Partner app"
@@ -54,4 +54,4 @@ camp_steps:
 
   - heading: "Publish"
     hindi: "पोस्ट करो"
-    description: "The area sees it, with the date. On the day, tap We're open. No printing, no pasting, no loudspeaker round."
+    description: "The area sees it, with the date. On the day, tap We're open."
