@@ -16,7 +16,7 @@
 
 .legal-dates {
     font-size: 0.9rem;
-    color: #888;
+    color: var(--ink-muted);
     margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
@@ -61,12 +61,12 @@
 }
 
 .legal-page a {
-    color: #FF6B35;
+    color: var(--brand-ink);
     text-decoration: underline;
 }
 
 .legal-page a:hover {
-    color: #FF9933;
+    color: var(--brand-fill-a);
 }
 
 /* Grievance Officer card */
@@ -79,7 +79,7 @@
 }
 
 .grievance-card h3 {
-    color: #FF6B35;
+    color: var(--brand-ink);
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -112,7 +112,7 @@
 }
 
 .deletion-path h3 {
-    color: #FF6B35;
+    color: var(--brand-ink);
     margin-top: 0;
 }
 
@@ -139,7 +139,7 @@
 
 /* Support contact card */
 .support-card {
-    background: linear-gradient(135deg, #FF9933 0%, #FF6B35 100%);
+    background: linear-gradient(135deg, var(--brand-fill-a) 0%, var(--brand-fill-b) 100%);
     border-radius: 12px;
     padding: 30px;
     margin: 20px 0;

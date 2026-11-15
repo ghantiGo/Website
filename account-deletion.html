@@ -8,9 +8,15 @@ data_key: privacy_policy
 <h2>How to Delete Your Account</h2>
 <p>{{ site.data.site.app_name }} respects your right to delete your account and associated data. You can request permanent deletion of your account using either of the methods described below.</p>
 
-<h2>Option 1: From the App</h2>
 <div class="deletion-path">
-  <p>In the resident or peddler app, open <strong>{{ site.data.legal.account_deletion.in_app_path | join: " > " }}</strong>. This brings you to this page, where you send the request by email as described below.</p>
+  <p>In the resident or peddler app, <strong>{{ site.data.legal.account_deletion.in_app_path | join: " > " }}</strong> brings you to this page. The GhantiGo Camp app has no such button: camp organisers use the same two ways below. Nothing is deleted until you send a request.</p>
+</div>
+
+<h2>Option 1: Request Deletion on WhatsApp</h2>
+<div class="deletion-path">
+  <p>Message us from the phone number registered on your account. This is the quickest way, and the number you message from tells us the account is yours.</p>
+  <p>{% include whatsapp_btn.html text="Request account deletion on WhatsApp" message="Hi GhantiGo! Please delete my account." %}</p>
+  <p>Tell us which account to delete: resident, peddler, or camp organiser (one number can have more than one). A reason is optional.</p>
 </div>
 
 <h2>Option 2: Request Deletion by Email</h2>
@@ -44,7 +50,7 @@ data_key: privacy_policy
 </ul>
 
 <h2>Processing Time</h2>
-<p>Account deletion requests are processed within {{ site.data.legal.account_deletion.processing_time }}.</p>
+<p>Account deletion requests are processed within {{ site.data.legal.account_deletion.processing_time }}. We reply to confirm we have received your request, and again when the deletion is done.</p>
 <p><strong>Note:</strong> Once deletion is processed, it cannot be reversed.</p>
 
 <h2>Contact Us</h2>

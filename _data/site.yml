@@ -12,13 +12,13 @@ cin: "U62010PN2024PTC235236" # Corporate Identification Number (required for DLT
 duns: "767598484"
 
 # Contact (update with real values before publishing)
-contact_email: "[UPDATE: support@ghantiplus.com]" # Update with actual support email
+contact_email: "[UPDATE: support@ghantigo.com]" # Update with actual support email
 contact_phone: "+919271237273"
 whatsapp_number: "919271237273" # Without + prefix, used in wa.me links
 whatsapp_message: "Hi GhantiGo! I want early access." # Pre-filled WhatsApp message
 
 # URLs (update with real values)
-url: "https://www.ghantiplus.com"
+url: "https://www.ghantigo.com"
 play_store_url: "[UPDATE: Add Play Store URL when published]"
 
 # Social / external links
