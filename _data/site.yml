@@ -20,10 +20,11 @@ url: "https://www.ghantigo.com"
 play_store_url: "[UPDATE: Add Play Store URL when published]"
 
 # Social / external links
-youtube_channel: "https://www.youtube.com/@ghantiplus"
-twitter_x: "https://x.com/ghantiplus"
-facebook: "https://www.facebook.com/ghantiplus/"
-linkedin: # No LinkedIn page yet. Must stay valueless (nil) — Liquid treats "" as truthy, so an empty string still renders a dead link.
+youtube_channel: "https://www.youtube.com/@ghantiGo"
+twitter_x: "https://x.com/ghantigoapp"
+facebook: "https://www.facebook.com/ghantigonow"
+instagram: "https://www.instagram.com/ghantigoapp/"
+linkedin: "https://www.linkedin.com/company/ghantigoapp/"
 
 # SMS header registered for DLT (internal use; not displayed on public website)
 sms_header: "GHANTI"
