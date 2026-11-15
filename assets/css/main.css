@@ -70,6 +70,10 @@ body {
 }
 
 .site-nav .nav-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 64px;
+    padding: 0 4px;
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
@@ -102,7 +106,7 @@ body {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--brand-fill-a) 0%, var(--brand-fill-b) 100%);
-    padding: 90px 20px 70px;
+    padding: 110px 20px 70px;
     text-align: center;
     color: white;
 }
@@ -169,6 +173,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    min-height: 64px;
     background: var(--whatsapp);
     border: 2px solid white;
     color: white;
@@ -475,6 +480,30 @@ body {
     font-size: 1rem;
 }
 
+.cta-call {
+    display: inline-flex;
+    align-items: center;
+    min-height: 64px;
+    padding: 0 12px;
+    color: white;
+    font-weight: 600;
+}
+
+html {
+    scroll-padding-bottom: 96px;
+}
+
+.sticky-action {
+    display: none;
+    position: sticky;
+    bottom: 0;
+    z-index: 90;
+    justify-content: center;
+    padding: 8px 16px calc(8px + env(safe-area-inset-bottom));
+    background: white;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.15);
+}
+
 /* Footer */
 .footer {
     background: var(--ink-dark);
@@ -514,11 +543,20 @@ body {
     color: rgba(255, 255, 255, 0.75);
 }
 
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .footer-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 64px;
+    padding: 0 14px;
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     font-size: 0.9rem;
-    margin: 0 12px;
     transition: color 0.2s ease;
 }
 
@@ -534,6 +572,10 @@ body {
 }
 
 .footer-social a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 64px;
+    padding: 0 8px;
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     font-size: 0.9rem;
@@ -558,7 +600,7 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
     .hero {
-        padding: 80px 20px 55px;
+        padding: 100px 20px 55px;
     }
 
     .hero .hero-description {
@@ -632,9 +674,8 @@ body {
         display: none;
     }
 
-    .footer-links a {
-        display: inline-block;
-        margin: 5px 10px;
+    .sticky-action {
+        display: flex;
     }
 }
 

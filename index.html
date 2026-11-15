@@ -179,6 +179,7 @@ layout: default
             {% include whatsapp_btn.html text=button.text message=button.message %}
             {% endfor %}
         </div>
-        <p class="cta-subtext">We reply on WhatsApp within a day. Pune first. Prefer a call? <a href="tel:{{ site.data.site.contact_phone }}">{{ site.data.site.contact_phone }}</a></p>
+        <p class="cta-subtext">We reply on WhatsApp within a day. Pune first.</p>
+        <a class="cta-call" href="tel:{{ site.data.site.contact_phone }}">Prefer a call? {{ site.data.site.contact_phone }}</a>
     </div>
 </section>

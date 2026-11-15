@@ -33,5 +33,8 @@
     {% include nav.html %}
     {{ content }}
     {% include footer.html %}
+    {% if page.url == '/' %}
+    <div class="sticky-action">{% include whatsapp_btn.html %}</div>
+    {% endif %}
 </body>
 </html>
