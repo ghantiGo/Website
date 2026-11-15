@@ -11,16 +11,17 @@
 grievance_officer:
   name: "[UPDATE: Grievance Officer full name]"
   designation: "Grievance Officer"
-  email: "[UPDATE: grievance@ghantiplus.com]"
+  email: "[UPDATE: grievance@ghantigo.com]"
   response_time: "90 days" # Maximum under DPDP Act
 
 # Account deletion
 account_deletion:
-  email: "[UPDATE: delete@ghantiplus.com]"
+  email: "[UPDATE: delete@ghantigo.com]"
   processing_time: "30 days"
   # The resident and peddler apps have a "Delete account" row on the Account /
-  # Profile screen that opens the website's deletion page. The apps do not
-  # delete anything themselves; the request is handled by email.
+  # Profile screen that opens the website's deletion page. The Camp app has no
+  # such row. The apps do not delete anything themselves; the request is
+  # handled by WhatsApp or email.
   in_app_path:
     - "Account or Profile"
     - "Delete account"

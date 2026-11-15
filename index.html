@@ -21,6 +21,7 @@ layout: default
 <section class="hero">
     <div class="container">
         <h1>{{ site.data.hero.headline_hindi }}</h1>
+        <p class="hero-positioning">{{ site.data.hero.places }}</p>
         <p class="hero-positioning">{{ site.data.hero.positioning }}</p>
         <p class="hero-description">{{ site.data.hero.subhead }}</p>
 
@@ -58,13 +59,13 @@ layout: default
 </section>
 
 <!-- 3. How it works — the one split by app: resident, Partner, Camp -->
-<section class="section section-white how-it-works-section">
+<section class="section section-white how-it-works-section" id="how-it-works">
     <div class="container">
         <h2>{{ site.data.how_it_works.title }}</h2>
         <p class="section-subtitle">{{ site.data.how_it_works.subtitle }}</p>
 
         <div class="dual-flow">
-            <div class="flow-block">
+            <div class="flow-block" id="residents">
                 <h3 class="flow-block-title">{{ site.data.how_it_works.customer_title }}</h3>
                 <p class="persona-app-label">{{ site.data.how_it_works.customer_subtitle }}</p>
                 <div class="flow-steps">
@@ -81,9 +82,10 @@ layout: default
                 </div>
             </div>
 
-            <div class="flow-block">
+            <div class="flow-block" id="feriwale">
                 <h3 class="flow-block-title">{{ site.data.how_it_works.peddler_title }}</h3>
                 <p class="persona-app-label">{{ site.data.how_it_works.peddler_subtitle }}</p>
+                <p class="persona-app-label">{{ site.data.how_it_works.peddler_plan_note }}</p>
                 <div class="flow-steps">
                     {% for step in site.data.how_it_works.peddler_steps %}
                     <div class="flow-step">
@@ -98,7 +100,7 @@ layout: default
                 </div>
             </div>
 
-            <div class="flow-block">
+            <div class="flow-block" id="camps">
                 <h3 class="flow-block-title">{{ site.data.how_it_works.camp_title }}</h3>
                 <p class="persona-app-label">{{ site.data.how_it_works.camp_subtitle }}</p>
                 <div class="flow-steps">
@@ -153,7 +155,6 @@ layout: default
                 <span class="use-case-icon" aria-hidden="true">{{ item.icon }}</span>
                 <h4>{{ item.title }}</h4>
                 <p>{{ item.text }}</p>
-                <p class="use-case-app">{{ item.app }}</p>
             </div>
             {% endfor %}
         </div>
@@ -169,6 +170,6 @@ layout: default
             {% include whatsapp_btn.html text=button.text message=button.message %}
             {% endfor %}
         </div>
-        <p class="cta-subtext">We reply on WhatsApp within a day. Pune first.</p>
+        <p class="cta-subtext">We reply on WhatsApp within a day. Pune first. Prefer a call? <a href="tel:{{ site.data.site.contact_phone }}">{{ site.data.site.contact_phone }}</a></p>
     </div>
 </section>
