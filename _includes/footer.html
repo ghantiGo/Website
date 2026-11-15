@@ -1,35 +1,38 @@
-<footer class="footer">
-    <div class="container">
-        <div class="footer-row footer-brand-row">
-            <span class="footer-app-name">{{ site.data.site.brand_name }}</span>
-            <span class="footer-separator">·</span>
-            <span class="footer-company">A product of {{ site.data.site.company_name }}</span>
+<footer class="footer scope scope--night">
+    <div class="wrap">
+        <div class="footer-top">
+            <p class="footer-tagline" lang="hi-Latn">{{ site.data.site.tagline }}</p>
+            {% include join_btn.html class="btn--brand" %}
         </div>
 
-        <div class="footer-row footer-links">
-            <a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a>
-            <a href="{{ '/terms/' | relative_url }}">Terms of Service</a>
-            <a href="{{ '/account-deletion/' | relative_url }}">Account Deletion</a>
-            <a href="{{ '/support/' | relative_url }}">Support</a>
-        </div>
+        <div class="footer-cols">
+            <ul class="footer-links" aria-label="Pages">
+                <li><a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a></li>
+                <li><a href="{{ '/terms/' | relative_url }}">Terms of Service</a></li>
+                <li><a href="{{ '/account-deletion/' | relative_url }}">Account Deletion</a></li>
+                <li><a href="{{ '/support/' | relative_url }}">Support</a></li>
+            </ul>
 
-        <div class="footer-row footer-social">
-            {% if site.data.site.youtube_channel %}
-            <a href="{{ site.data.site.youtube_channel }}" target="_blank" rel="noopener">YouTube</a>
-            {% endif %}
-            {% if site.data.site.twitter_x %}
-            <a href="{{ site.data.site.twitter_x }}" target="_blank" rel="noopener">X</a>
-            {% endif %}
-            {% if site.data.site.facebook %}
-            <a href="{{ site.data.site.facebook }}" target="_blank" rel="noopener">Facebook</a>
-            {% endif %}
-            {% if site.data.site.linkedin %}
-            <a href="{{ site.data.site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-            {% endif %}
-        </div>
+            <ul class="footer-links" aria-label="Social">
+                {% if site.data.site.youtube_channel %}
+                <li><a href="{{ site.data.site.youtube_channel }}" target="_blank" rel="noopener">YouTube</a></li>
+                {% endif %}
+                {% if site.data.site.twitter_x %}
+                <li><a href="{{ site.data.site.twitter_x }}" target="_blank" rel="noopener">X</a></li>
+                {% endif %}
+                {% if site.data.site.facebook %}
+                <li><a href="{{ site.data.site.facebook }}" target="_blank" rel="noopener">Facebook</a></li>
+                {% endif %}
+                {% if site.data.site.linkedin %}
+                <li><a href="{{ site.data.site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+                {% endif %}
+            </ul>
 
-        <div class="footer-row footer-credit">
-            <span>By <a href="https://www.songpoem.com/" target="_blank" rel="noopener">SONGPOEM</a> · Pune, India · &copy; {{ site.data.site.copyright_year }}</span>
+            <p class="footer-company">
+                A product of {{ site.data.site.company_name }}<br>
+                By <a href="https://www.songpoem.com/" target="_blank" rel="noopener">SONGPOEM</a> · Pune, India · &copy; {{ site.data.site.copyright_year }}
+            </p>
         </div>
     </div>
+    <p class="footer-wordmark" aria-hidden="true">{{ site.data.site.brand_name }}</p>
 </footer>

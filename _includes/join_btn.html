@@ -1,1 +1,1 @@
-<a href="#join" class="btn">{{ include.text | default: site.data.hero.cta_text }}</a>
+<a href="{{ '/#join' | relative_url }}" class="btn {{ include.class }}" data-magnetic><span class="btn-bell">{% include path_icon.html name="bell" size=22 %}</span>{{ include.text | default: site.data.hero.cta_text }}</a>

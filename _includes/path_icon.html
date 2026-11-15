@@ -1,7 +1,20 @@
-{%- if include.name == "home" -%}
-<svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-{%- elsif include.name == "bell" -%}
-<svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
-{%- elsif include.name == "event" -%}
-<svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+{%- assign size = include.size | default: 24 -%}
+<svg class="icon" viewBox="0 0 24 24" width="{{ size }}" height="{{ size }}" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+{%- if include.name == "bell" -%}
+<path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4l2-2z"/><path d="M10 21a2 2 0 0 0 4 0"/>
+{%- elsif include.name == "leaf" -%}
+<path d="M5 19C5 10 10 5 19 5c0 9-5 14-14 14z"/><path d="M5 19l8-8"/>
+{%- elsif include.name == "wheel" -%}
+<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2"/><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3"/>
+{%- elsif include.name == "kulfi" -%}
+<path d="M8 8a4 4 0 0 1 8 0v7H8z"/><path d="M12 15v6"/>
+{%- elsif include.name == "eye" -%}
+<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>
+{%- elsif include.name == "play" -%}
+<path d="M8 5l12 7-12 7z" fill="currentColor"/>
+{%- elsif include.name == "arrow" -%}
+<path d="M5 12h14M13 6l6 6-6 6"/>
+{%- elsif include.name == "hand" -%}
+<path d="M8 12V5a1.5 1.5 0 0 1 3 0v6M11 10V4a1.5 1.5 0 0 1 3 0v7M14 11V6a1.5 1.5 0 0 1 3 0v8c0 4-2.5 7-6 7s-4.5-2-6-5l-1.5-3a1.5 1.5 0 0 1 2.6-1.5L8 14"/>
 {%- endif -%}
+</svg>

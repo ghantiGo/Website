@@ -1,0 +1,60 @@
+# One day in the lane — the scroll story, and the rows of the example phone.
+# Each moment owns one row of the phone. `still: true` rows show their last-seen
+# line in the hero phone, which is a single snapshot taken at `still_clock`.
+
+label: "One day"
+title: "A day in your lane, on one screen."
+caption: "Example"
+app_title: "Timetable"
+app_place: "Your area"
+still_clock: "4:36 pm"
+seen_prefix: "Last seen at"
+
+moments:
+  - time: "7:30"
+    meridiem: "am"
+    clock: "7:32 am"
+    day: "Today"
+    title: "Sabzi, before the office rush."
+    text: "The tempo planned Park lane for 7:30. You saw it the night before, so the bag was ready."
+    row:
+      icon: "leaf"
+      name: "Sabzi tempo"
+      places: "Park lane · 7:30 am"
+      seen: "Main gate · 2 min ago"
+
+  - time: "11:00"
+    meridiem: "am"
+    clock: "11:04 am"
+    day: "Today"
+    title: "The knife sharpener, not missed this time."
+    text: "He comes round once in a while, and never on the day you remember. Today he is on the timetable."
+    row:
+      icon: "wheel"
+      name: "Knife sharpener"
+      places: "Main gate · 11:00 am"
+      seen: "Bus stop · 9 min ago"
+
+  - time: "4:30"
+    meridiem: "pm"
+    clock: "4:36 pm"
+    day: "Today"
+    title: "Kulfi. Two lanes away, six minutes ago."
+    text: "You see where he was last seen and how long ago, then decide if the walk down is worth it."
+    row:
+      icon: "kulfi"
+      name: "Kulfiwala"
+      places: "Gate 2 · 4:30 pm, Park lane · 5:00 pm"
+      seen: "Ganesh Mandir · 6 min ago"
+      still: true
+
+  - time: "Sat"
+    meridiem: ""
+    clock: "8:10 pm"
+    day: "Saturday"
+    title: "Eye check-up camp at the community hall."
+    text: "Camps happen once, so they are announced before the day, with the place, the time and what to bring."
+    row:
+      icon: "eye"
+      name: "Eye check-up camp"
+      places: "Community hall · 10:00 am"

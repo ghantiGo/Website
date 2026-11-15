@@ -1,181 +1,205 @@
 ---
 layout: default
 ---
-{%- comment -%}
-  Five sections, in this order, and the order is the argument:
+{%- assign hero = site.data.hero -%}
+{%- assign ghanti = site.data.challenges -%}
+{%- assign day = site.data.day -%}
+{%- assign bento = site.data.bento -%}
+{%- assign how = site.data.how_it_works -%}
+{%- assign who = site.data.providers -%}
 
-    1. Hero        — what it is, and one thing to do
-    2. Problem     — why the old ghanti stopped reaching (+ the story video)
-    3. How it works— the ONLY split by app: resident, Partner, Camp
-    4. Providers   — everyone who comes to your lane, urban and rural
-    5. CTA         — the same single action as the hero
-
-  This replaced a ten-section page that split customer/provider twice in a row
-  (a Benefits grid, then How It Works) and set up its premise three times. If a
-  new section is proposed, the question to answer first is which of these five
-  it belongs inside — a sixth is almost always a sign that one of these is not
-  doing its job.
-{%- endcomment -%}
-
-<!-- 1. Hero -->
 <section class="hero">
-    <div class="container">
-        <h1 lang="hi-Latn">{{ site.data.hero.headline_hindi }}</h1>
-        <p class="hero-positioning">{{ site.data.hero.places }}</p>
-        <p class="hero-positioning">{{ site.data.hero.positioning }}</p>
-        <p class="hero-description">{{ site.data.hero.subhead }}</p>
-
-        {% include join_btn.html %}
-        <p class="launch-location">{{ site.data.hero.launch_message }}</p>
-
-        <nav class="path-tiles" aria-label="{{ site.data.hero.paths_label }}">
-            {% for path in site.data.hero.paths %}
-            <a class="path-tile" href="{{ path.href }}">
-                {% include path_icon.html name=path.icon %}
-                <span>{{ path.label }}</span>
-            </a>
-            {% endfor %}
-        </nav>
+    <div class="wrap hero-grid">
+        <div class="hero-copy">
+            <p class="chip" data-clock hidden><span class="chip-dot" aria-hidden="true"></span>{{ hero.clock_place }} · <time data-clock-time></time></p>
+            <h1 class="display" lang="hi-Latn">{% for line in hero.headline_lines %}<span class="display-line">{{ line }}</span> {% endfor %}</h1>
+            <p class="hero-deva" lang="hi" aria-hidden="true">{{ hero.headline_devanagari }}</p>
+            <p class="hero-line">{{ hero.line }}</p>
+            <p class="hero-support">{{ hero.support }}</p>
+            <div class="hero-actions">
+                {% include join_btn.html class="btn--brand" %}
+                <p class="hero-launch">{{ hero.launch_message }}</p>
+            </div>
+            <nav class="hero-paths" aria-label="{{ hero.paths_label }}">
+                {% for path in hero.paths %}
+                <a class="hero-path hero-path--{{ path.key }}" href="{{ path.href }}"><span class="hero-path-dot" aria-hidden="true"></span>{{ path.label }}{% include path_icon.html name="arrow" size=18 %}</a>
+                {% endfor %}
+            </nav>
+        </div>
+        <div class="hero-stage">
+            <span class="sun" aria-hidden="true"></span>
+            {% include phone.html %}
+        </div>
     </div>
 </section>
 
-<!-- 2. The problem, and the story that explains it -->
-<section class="section section-warm challenge-section">
-    <div class="container">
-        <h2>{{ site.data.challenges.title }}</h2>
-        {% if site.data.challenges.subtitle %}<p class="section-subtitle">{{ site.data.challenges.subtitle }}</p>{% endif %}
-        <div class="challenge-items">
-            {% for item in site.data.challenges.items %}
-            <div class="challenge-item">
-                <span class="challenge-icon">{{ item.icon }}</span>
+<div class="marquee" aria-hidden="true">
+    {% for row in who.marquee %}
+    <div class="marquee-row{% cycle '', ' marquee-row--back' %}">
+        {% for copy in (1..2) %}
+        <ul class="marquee-list">
+            {% for trade in row %}<li>{{ trade }}</li>{% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+
+<section class="section ghanti">
+    <div class="wrap">
+        <p class="label"><span>01</span>{{ ghanti.label }}</p>
+        <h2 class="title reveal">{{ ghanti.title }}</h2>
+        <p class="lede reveal">{{ ghanti.subtitle }}</p>
+        <ol class="statements">
+            {% for statement in ghanti.statements %}
+            <li class="statement"><span class="statement-no" aria-hidden="true">0{{ forloop.index }}</span><span>{{ statement }}</span></li>
+            {% endfor %}
+        </ol>
+        <p class="bridge reveal">{{ ghanti.bridge }}</p>
+    </div>
+</section>
+
+<section class="section day">
+    <div class="wrap">
+        <p class="label"><span>02</span>{{ day.label }}</p>
+        <h2 class="title reveal">{{ day.title }}</h2>
+    </div>
+    <div class="wrap day-grid">
+        <div class="day-stage">
+            {% include phone.html live=true %}
+        </div>
+        <ol class="moments">
+            {% for moment in day.moments %}
+            <li class="moment" data-moment data-clock="{{ moment.clock }}">
+                <p class="moment-time">{{ moment.time }}{% if moment.meridiem != "" %}<small>{{ moment.meridiem }}</small>{% endif %}</p>
+                <h3 class="moment-title">{{ moment.title }}</h3>
+                <p class="moment-text">{{ moment.text }}</p>
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
+</section>
+
+<section class="section bento">
+    <div class="wrap">
+        <p class="label"><span>03</span>{{ bento.label }}</p>
+        <h2 class="title reveal">{{ bento.title }}</h2>
+        <div class="bento-grid">
+            {% for tile in bento.tiles %}
+            <article class="tile tile--{{ tile.kind }} scope reveal">
+                <div class="tile-visual" aria-hidden="true">
+                    {% case tile.kind %}
+                    {% when "seen" %}
+                    <p class="pill pill--seen"><span class="pulse"></span>{{ tile.sample }}</p>
+                    {% when "media" %}
+                    <div class="media-shots">
+                        {% for photo in who.photos limit: 2 %}<img src="{{ photo.image | relative_url }}" alt="" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy">{% endfor %}
+                    </div>
+                    <div class="wave">{% include path_icon.html name="play" size=18 %}{% for bar in (1..22) %}<i></i>{% endfor %}</div>
+                    {% when "ask" %}
+                    <p class="pill pill--ask">{% include path_icon.html name="hand" size=20 %}{{ tile.sample }}</p>
+                    {% when "camps" %}
+                    <p class="pill pill--camp">{% include path_icon.html name="eye" size=20 %}{{ tile.sample }}</p>
+                    {% when "free" %}
+                    <p class="tile-figure">{{ tile.sample }}</p>
+                    {% endcase %}
+                </div>
+                <div class="tile-copy">
+                    <h3 class="tile-title">{{ tile.title }}</h3>
+                    <p>{{ tile.text }}</p>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="apps" id="how-it-works">
+    <div class="wrap apps-head">
+        <p class="label"><span>04</span>{{ how.label }}</p>
+        <h2 class="title reveal">{{ how.title }}</h2>
+        <p class="lede reveal">{{ how.subtitle }}</p>
+    </div>
+    {% for app in how.apps %}
+    <article class="app app--{{ app.key }} scope" id="{{ app.anchor }}">
+        <div class="wrap app-inner">
+            <header class="app-head">
+                <p class="app-who"><span>0{{ forloop.index }}</span>{{ app.who }}</p>
+                <p class="app-name">{{ app.app }}</p>
+            </header>
+            <h3 class="app-verb">{{ app.verb }} <span lang="hi" aria-hidden="true">{{ app.verb_hindi }}</span></h3>
+            <p class="app-note">{{ app.note }}</p>
+            <ol class="steps">
+                {% for step in app.steps %}
+                <li class="step">
+                    <span class="step-no" aria-hidden="true">0{{ forloop.index }}</span>
+                    <h4>{{ step.heading }}</h4>
+                    <p class="step-hindi" lang="hi">{{ step.hindi }}</p>
+                    <p>{{ step.description }}</p>
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
+    </article>
+    {% endfor %}
+</section>
+
+<section class="section faces">
+    <div class="wrap">
+        <p class="label"><span>05</span>{{ who.label }}</p>
+        <h2 class="title reveal">{{ who.title }}</h2>
+        <p class="lede reveal">{{ who.subtitle }}</p>
+        <div class="rhythms">
+            {% for rhythm in who.rhythms %}
+            <div class="rhythm reveal">
+                <p class="rhythm-when">{{ rhythm.heading }}</p>
+                <h3>{{ rhythm.lead }}</h3>
+                <p>{{ rhythm.text }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="strip" tabindex="0" role="group" aria-label="Photos from the lanes">
+        {% for photo in who.photos %}
+        <figure class="shot">
+            <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy">
+            <figcaption>{{ photo.caption }}</figcaption>
+        </figure>
+        {% endfor %}
+    </div>
+    <div class="wrap">
+        <a class="video" href="https://www.youtube.com/watch?v={{ hero.video.youtube_id }}" data-video="{{ hero.video.youtube_id }}" data-title="{{ hero.video.title }}">
+            <span class="video-play">{% include path_icon.html name="play" size=36 %}</span>
+            <span class="video-label">{{ hero.video.label }}</span>
+        </a>
+    </div>
+</section>
+
+<section class="section villages scope scope--night">
+    <div class="wrap">
+        <p class="label"><span>06</span>{{ who.rural.label }}</p>
+        <h2 class="title reveal">{{ who.rural.title }} <span class="title-hindi" lang="hi">{{ who.rural.hindi }}</span></h2>
+        <ul class="village-list">
+            {% for item in who.rural.items %}
+            <li class="reveal">
+                <h3>{{ item.title }}</h3>
                 <p>{{ item.text }}</p>
-            </div>
+            </li>
             {% endfor %}
-        </div>
-        <p class="challenge-bridge">{{ site.data.challenges.bridge }}</p>
-
-        <div class="video-container">
-            <iframe
-                src="https://www.youtube-nocookie.com/embed/{{ site.data.hero.video.youtube_id }}"
-                title="{{ site.data.hero.video.title }}"
-                frameborder="0"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
+        </ul>
     </div>
 </section>
 
-<!-- 3. How it works — the one split by app: resident, Partner, Camp -->
-<section class="section section-white how-it-works-section" id="how-it-works">
-    <div class="container">
-        <h2>{{ site.data.how_it_works.title }}</h2>
-        <p class="section-subtitle">{{ site.data.how_it_works.subtitle }}</p>
-
-        <div class="dual-flow">
-            <div class="flow-block" id="residents">
-                <h3 class="flow-block-title">{{ site.data.how_it_works.customer_title }}</h3>
-                <p class="persona-app-label">{{ site.data.how_it_works.customer_subtitle }}</p>
-                <div class="flow-steps">
-                    {% for step in site.data.how_it_works.customer_steps %}
-                    <div class="flow-step">
-                        <div class="step-number">0{{ forloop.index }}</div>
-                        <div class="step-content">
-                            <h4>{{ step.heading }}</h4>
-                            <p class="hindi" lang="hi">{{ step.hindi }}</p>
-                            <p>{{ step.description }}</p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-
-            <div class="flow-block" id="feriwale">
-                <h3 class="flow-block-title">{{ site.data.how_it_works.peddler_title }}</h3>
-                <p class="persona-app-label">{{ site.data.how_it_works.peddler_subtitle }}</p>
-                <p class="persona-app-label">{{ site.data.how_it_works.peddler_plan_note }}</p>
-                <div class="flow-steps">
-                    {% for step in site.data.how_it_works.peddler_steps %}
-                    <div class="flow-step">
-                        <div class="step-number">0{{ forloop.index }}</div>
-                        <div class="step-content">
-                            <h4>{{ step.heading }}</h4>
-                            <p class="hindi" lang="hi">{{ step.hindi }}</p>
-                            <p>{{ step.description }}</p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-
-            <div class="flow-block" id="camps">
-                <h3 class="flow-block-title">{{ site.data.how_it_works.camp_title }}</h3>
-                <p class="persona-app-label">{{ site.data.how_it_works.camp_subtitle }}</p>
-                <div class="flow-steps">
-                    {% for step in site.data.how_it_works.camp_steps %}
-                    <div class="flow-step">
-                        <div class="step-number">0{{ forloop.index }}</div>
-                        <div class="step-content">
-                            <h4>{{ step.heading }}</h4>
-                            <p class="hindi" lang="hi">{{ step.hindi }}</p>
-                            <p>{{ step.description }}</p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
+<section class="section join scope" id="join">
+    <div class="wrap join-grid">
+        <div class="join-copy">
+            <p class="label"><span>07</span>{{ hero.cta_text }}</p>
+            <h2 class="title">{{ site.data.waitlist.title }}</h2>
+            <p class="lede">{{ site.data.waitlist.subtitle }}</p>
+            <a class="join-call" href="tel:{{ site.data.site.contact_phone }}">Prefer a call? {{ site.data.site.contact_phone }}</a>
         </div>
-    </div>
-</section>
-
-<!-- 4. Providers — split by audience: urban society gate, rural gaon -->
-<section class="section section-warm providers-section">
-    <div class="container">
-        <h2>{{ site.data.providers.title }}</h2>
-        <p class="section-subtitle">{{ site.data.providers.subtitle }}</p>
-
-        {% assign urban = site.data.providers.urban %}
-        <h3 class="provider-audience-title">{{ urban.heading }}</h3>
-
-        <h3 class="provider-group-title">{{ urban.recurring.heading }}</h3>
-        <p class="provider-group-description">{{ urban.recurring.description }}</p>
-        <div class="use-cases-grid">
-            {% for photo in urban.recurring.photos %}
-            <div class="use-case-card">
-                <div class="use-case-photo">
-                    <img src="{{ photo.image }}" alt="{{ photo.alt }}" loading="lazy">
-                </div>
-                {% if photo.caption %}<p class="caption">{{ photo.caption }}</p>{% endif %}
-            </div>
-            {% endfor %}
+        <div class="join-form scope scope--paper">
+            {% include waitlist_form.html %}
         </div>
-
-        <h3 class="provider-group-title">{{ urban.occasional.heading }}</h3>
-        <p class="provider-group-description">{{ urban.occasional.description }}</p>
-        <p class="provider-organiser-note">{{ urban.occasional.organiser_note }}</p>
-
-        {% assign rural = site.data.providers.rural %}
-        <h3 class="provider-audience-title">{{ rural.heading }}</h3>
-        {% if rural.intro %}<p class="provider-group-description">{{ rural.intro }}</p>{% endif %}
-        <div class="use-cases-grid rural-grid">
-            {% for item in rural.items %}
-            <div class="use-case-card">
-                <span class="use-case-icon" aria-hidden="true">{{ item.icon }}</span>
-                <h4>{{ item.title }}</h4>
-                <p>{{ item.text }}</p>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<!-- 5. One action, same as the hero: the waitlist form -->
-<section class="cta-section" id="join">
-    <div class="container">
-        <h2>{{ site.data.waitlist.title }}</h2>
-        <p class="cta-subtext">{{ site.data.waitlist.subtitle }}</p>
-        {% include waitlist_form.html %}
-        <a class="cta-call" href="tel:{{ site.data.site.contact_phone }}">Prefer a call? {{ site.data.site.contact_phone }}</a>
     </div>
 </section>

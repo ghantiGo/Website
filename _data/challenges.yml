@@ -1,19 +1,12 @@
-# Challenges section — the old problem GhantiGo solves
+# The old ghanti — why the call stopped reaching.
 
-title: "The ghanti your lane already trusts"
-subtitle: "Every feriwala had a call of their own — a bell, a horn, a sing-song cry. Today the call has more walls to cross."
+label: "The old ghanti"
+title: "The ghanti was built for the ground floor."
+subtitle: "Every feriwala has a call of their own: a bell, a horn, a sing-song cry. Today it has more walls to cross."
 
-items:
-  - icon: "🛎️"
-    text: "The ghanti is lovely on the ground floor. The 5th floor needs a timetable."
+statements:
+  - "Gates, towers and traffic swallow the call."
+  - "The mixer broke on Monday. The repairwala came on Sunday."
+  - "Is the kulfiwala still nearby, or did you just miss him?"
 
-  - icon: "🏢"
-    text: "Gates, high-rises and busy roads carry the sound away."
-
-  - icon: "🔧"
-    text: "The mixer broke on Monday. The repairwala passed by on Sunday."
-
-  - icon: "🧺"
-    text: "See where the kulfiwala was last seen, and how many minutes ago, then decide if the walk is worth it."
-
-bridge: "GhantiGo puts the timetable in your hand, on the 5th floor too."
+bridge: "The call hasn't changed. It just needs to reach the 5th floor."
