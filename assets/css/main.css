@@ -182,13 +182,47 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.whatsapp-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+.whatsapp-btn:hover,
+.whatsapp-btn:active {
+    filter: brightness(1.25);
+}
+
+.path-tile:active {
+    background: var(--surface-tint);
+}
+
+a:focus-visible {
+    outline: 3px solid #1A1A1A;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px white;
+}
+
+.skip-link {
+    position: absolute;
+    left: 8px;
+    top: -100px;
+    z-index: 200;
+    padding: 12px 20px;
+    background: white;
+    color: var(--brand-ink);
+    font-weight: 600;
+}
+
+.skip-link:focus {
+    top: 8px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .whatsapp-btn {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+        transform: translateY(-3px);
+    }
 }
 
 .whatsapp-btn svg {
@@ -283,11 +317,6 @@ body {
     text-align: center;
     box-shadow: 0 4px 18px rgba(255, 107, 53, 0.1);
     border: 1px solid rgba(255, 153, 51, 0.12);
-    transition: transform 0.3s ease;
-}
-
-.use-case-card:hover {
-    transform: translateY(-5px);
 }
 
 .use-case-photo {

@@ -30,8 +30,11 @@
     {% endif %}
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     {% include nav.html %}
+    <main id="main">
     {{ content }}
+    </main>
     {% include footer.html %}
     {% if page.url == '/' %}
     <div class="sticky-action">{% include whatsapp_btn.html %}</div>
