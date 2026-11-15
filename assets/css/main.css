@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Noto Sans', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
     color: var(--ink);
     background: var(--surface-warm);
@@ -426,7 +426,8 @@ a:focus-visible {
 }
 
 .step-content .hindi {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.7;
     color: var(--brand-ink);
     margin-bottom: 5px;
 }
