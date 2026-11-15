@@ -1283,6 +1283,41 @@ ul {
     box-shadow: none;
 }
 
+.waitlist .text-input {
+    width: 100%;
+    min-height: 56px;
+    padding: 0 16px;
+    border: 1px solid var(--ink);
+    border-radius: 16px;
+    background: #FFFFFF;
+    color: #1B1A17;
+    font: inherit;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.waitlist .text-input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px var(--ink);
+}
+
+.waitlist .text-input::placeholder {
+    color: #6B665C;
+    font-weight: 400;
+}
+
+.waitlist .optional {
+    font-size: 0.85rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.field-hint {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
 .field-error {
     margin-top: 6px;
     color: #B3261E;

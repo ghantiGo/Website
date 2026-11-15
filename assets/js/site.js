@@ -49,6 +49,16 @@
         each(document.querySelectorAll('.reveal'), function (el) { reveal.observe(el); });
     }
 
+    var interest = document.querySelector('[data-interest-label]');
+    if (interest) {
+        var labels = JSON.parse(interest.getAttribute('data-labels'));
+        each(document.querySelectorAll('input[name="role"]'), function (radio) {
+            radio.addEventListener('change', function () {
+                if (radio.checked && labels[radio.value]) interest.textContent = labels[radio.value];
+            });
+        });
+    }
+
     each(document.querySelectorAll('[data-video]'), function (link) {
         link.addEventListener('click', function (event) {
             event.preventDefault();

@@ -20,6 +20,17 @@
         <p class="field-error" id="wl-phone-error" role="alert" hidden></p>
     </div>
 
+    <div class="waitlist-field">
+        <label for="wl-locality">{{ w.locality_label }} <span class="optional">optional</span></label>
+        <input class="text-input" id="wl-locality" name="locality" type="text" maxlength="100" autocomplete="address-level2" placeholder="{{ w.locality_placeholder }}">
+    </div>
+
+    <div class="waitlist-field">
+        <label for="wl-interest"><span data-interest-label data-labels="{{ w.interest_labels | jsonify | escape }}">{{ w.interest_default }}</span> <span class="optional">optional</span></label>
+        <input class="text-input" id="wl-interest" name="interest" type="text" maxlength="100" autocomplete="off" placeholder="{{ w.interest_placeholder }}" aria-describedby="wl-interest-hint">
+        <p class="field-hint" id="wl-interest-hint">{{ w.interest_hint }}</p>
+    </div>
+
     <div class="waitlist-consent">
         <label class="waitlist-check">
             <input type="checkbox" name="consent" value="true" required aria-describedby="wl-consent-error">
