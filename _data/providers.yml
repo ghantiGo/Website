@@ -38,7 +38,7 @@ urban:
 
 rural:
   heading: "In villages — Gaon ka timetable"
-  intro: "Not available yet. Coming after Pune."
+  intro: "Coming to villages after Pune."
   items:
     - icon: "🚁"
       title: "Drone spraying"

@@ -1,19 +1,19 @@
 # Challenges section — the old problem GhantiGo solves
 
-title: "Why the old ghanti stopped reaching"
-subtitle: "Every feriwala had a way to announce themselves. Today, that voice gets lost."
+title: "The ghanti your lane already trusts"
+subtitle: "Every feriwala had a way to announce themselves. Today, that voice needs somewhere to be heard."
 
 items:
   - icon: "🛎️"
-    text: "Their ghanti can't reach the 5th floor — or the far end of the gaon."
+    text: "The ghanti is lovely on the ground floor. The 5th floor and the far end of the gaon need a timetable."
 
   - icon: "🏢"
-    text: "Gated societies, high-rises and busy roads block it."
+    text: "Gates, high-rises and busy roads carry the sound away."
 
   - icon: "🗑️"
-    text: "So we buy new instead of repairing — or miss fresh local bargains."
+    text: "Repair what you own, and catch fresh local bargains."
 
   - icon: "🧺"
-    text: "So we waste a trip to the market, and the feriwala walks home with what didn't sell."
+    text: "Walk over when you know he is there, and he sells out before he walks home."
 
 bridge: "GhantiGo brings the neighbourhood bell back — in an app."
