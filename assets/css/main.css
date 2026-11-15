@@ -1,3 +1,17 @@
+:root {
+    --brand-fill-a: #C4402A;
+    --brand-fill-b: #A93019;
+    --brand-ink: #A93019;
+    --accent-on-dark: #FF9933;
+    --whatsapp: #075E54;
+    --ink: #333;
+    --ink-muted: #5C5C5C;
+    --ink-dark: #2D2D2D;
+    --ink-dark-muted: #B3B3B3;
+    --surface-warm: #FFF9F5;
+    --surface-tint: #FFF0E6;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +21,8 @@
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: #FFF9F5;
+    color: var(--ink);
+    background: var(--surface-warm);
 }
 
 .container {
@@ -56,7 +70,7 @@ body {
 }
 
 .site-nav .nav-links a {
-    color: rgba(255, 255, 255, 0.9);
+    color: white;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
@@ -70,11 +84,11 @@ body {
 /* Solid nav for non-home pages */
 .nav-solid {
     position: relative;
-    background: #2D2D2D;
+    background: var(--ink-dark);
 }
 
 .nav-solid .nav-brand {
-    color: #FF9933;
+    color: var(--accent-on-dark);
 }
 
 .nav-solid .nav-links a {
@@ -82,7 +96,7 @@ body {
 }
 
 .nav-solid .nav-links a:hover {
-    color: #FF9933;
+    color: var(--accent-on-dark);
 }
 
 /* Mobile nav toggle */
@@ -105,7 +119,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #FF9933 0%, #FF6B35 100%);
+    background: linear-gradient(135deg, var(--brand-fill-a) 0%, var(--brand-fill-b) 100%);
     padding: 90px 20px 70px;
     text-align: center;
     color: white;
@@ -128,7 +142,8 @@ body {
 }
 
 .hero h1 {
-    font-size: 2.4rem;
+    font-size: clamp(1.8rem, 1.2rem + 3vw, 2.4rem);
+    text-wrap: balance;
     font-weight: 700;
     margin-bottom: 12px;
     line-height: 1.3;
@@ -146,7 +161,6 @@ body {
     font-size: 1.1rem;
     max-width: 720px;
     margin: 0 auto 30px;
-    opacity: 0.95;
     line-height: 1.6;
 }
 
@@ -173,7 +187,8 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: #25D366;
+    background: var(--whatsapp);
+    border: 2px solid white;
     color: white;
     padding: 16px 32px;
     border-radius: 50px;
@@ -198,7 +213,6 @@ body {
 .hero .launch-location {
     margin-top: 20px;
     font-size: 1rem;
-    opacity: 0.9;
 }
 
 .hero .company-note {
@@ -217,21 +231,22 @@ body {
 }
 
 .section-warm {
-    background: #FFF9F5;
+    background: var(--surface-warm);
 }
 
 .section h2 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2rem);
+    text-wrap: balance;
     font-weight: 600;
     text-align: center;
     margin-bottom: 14px;
-    color: #333;
+    color: var(--ink);
 }
 
 .section-subtitle {
     text-align: center;
     font-size: 1.05rem;
-    color: #666;
+    color: var(--ink-muted);
     max-width: 700px;
     margin: 0 auto 40px;
     line-height: 1.6;
@@ -266,7 +281,7 @@ body {
     overflow: hidden;
     border-radius: 12px;
     margin-bottom: 12px;
-    background: #FFF0E6;
+    background: var(--surface-tint);
 }
 
 .use-case-photo img {
@@ -279,26 +294,26 @@ body {
 
 .use-case-card .caption {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--ink-muted);
     line-height: 1.5;
     margin: 0;
 }
 
 .use-case-card h4 {
     font-size: 1.05rem;
-    color: #333;
+    color: var(--ink);
     margin-bottom: 6px;
 }
 
 .use-case-card p {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--ink-muted);
 }
 
 /* Persona label, shared by the two How-It-Works columns */
 .persona-app-label {
     font-size: 0.95rem;
-    color: #777;
+    color: var(--ink-muted);
     font-weight: 500;
     margin: 0;
 }
@@ -323,7 +338,7 @@ body {
     text-align: center;
     font-size: 1.25rem;
     margin-bottom: 6px;
-    color: #333;
+    color: var(--ink);
     font-weight: 600;
 }
 
@@ -331,7 +346,7 @@ body {
     text-align: center;
     margin-bottom: 25px;
     font-size: 0.95rem;
-    color: #777;
+    color: var(--ink-muted);
     font-weight: 500;
 }
 
@@ -346,7 +361,7 @@ body {
     align-items: flex-start;
     gap: 16px;
     padding: 18px;
-    background: #FFF9F5;
+    background: var(--surface-warm);
     border-radius: 12px;
 }
 
@@ -355,25 +370,25 @@ body {
     flex-shrink: 0;
     font-size: 0.85rem;
     font-weight: 700;
-    color: #FF6B35;
+    color: var(--brand-ink);
     text-align: right;
     padding-top: 4px;
 }
 
 .step-content h4 {
     font-size: 1.05rem;
-    color: #333;
+    color: var(--ink);
     margin-bottom: 4px;
 }
 
 .step-content .hindi {
     font-size: 0.9rem;
-    color: #FF6B35;
+    color: var(--brand-ink);
     margin-bottom: 5px;
 }
 
 .step-content p {
-    color: #666;
+    color: var(--ink-muted);
     font-size: 0.92rem;
     line-height: 1.5;
 }
@@ -406,7 +421,7 @@ body {
 }
 
 .challenge-item p {
-    color: #555;
+    color: var(--ink-muted);
     font-size: 1.05rem;
     text-align: left;
     line-height: 1.5;
@@ -415,13 +430,13 @@ body {
 .challenge-bridge {
     margin-top: 30px;
     font-size: 1.25rem;
-    color: #FF6B35;
+    color: var(--brand-ink);
     font-weight: 600;
 }
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, #FF6B35 0%, #FF9933 100%);
+    background: linear-gradient(135deg, var(--brand-fill-b) 0%, var(--brand-fill-a) 100%);
     text-align: center;
     padding: 70px 20px;
     color: white;
@@ -448,12 +463,11 @@ body {
 .cta-subtext {
     margin-top: 20px;
     font-size: 1rem;
-    opacity: 0.9;
 }
 
 /* Footer */
 .footer {
-    background: #2D2D2D;
+    background: var(--ink-dark);
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -478,7 +492,7 @@ body {
 .footer-app-name {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #FF9933;
+    color: var(--accent-on-dark);
 }
 
 .footer-separator {
@@ -499,7 +513,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #FF9933;
+    color: var(--accent-on-dark);
 }
 
 .footer-social {
@@ -518,16 +532,16 @@ body {
 }
 
 .footer-social a:hover {
-    color: #FF9933;
+    color: var(--accent-on-dark);
 }
 
 .footer-credit {
     font-size: 0.9rem;
-    color: #999;
+    color: var(--ink-dark-muted);
 }
 
 .footer-credit a {
-    color: #FF9933;
+    color: var(--accent-on-dark);
     text-decoration: none;
 }
 
@@ -535,10 +549,6 @@ body {
 @media (max-width: 768px) {
     .hero {
         padding: 80px 20px 55px;
-    }
-
-    .hero h1 {
-        font-size: 1.8rem;
     }
 
     .hero .hero-description {
@@ -551,7 +561,6 @@ body {
     }
 
     .section h2 {
-        font-size: 1.5rem;
         margin-bottom: 12px;
     }
 
@@ -651,14 +660,14 @@ body {
 .provider-group-title {
     text-align: center;
     font-size: 1.25rem;
-    color: #333;
+    color: var(--ink);
     margin: 10px 0 8px;
 }
 
 .provider-group-description {
     text-align: center;
     font-size: 1rem;
-    color: #666;
+    color: var(--ink-muted);
     max-width: 700px;
     margin: 0 auto 28px;
     line-height: 1.65;
@@ -667,11 +676,11 @@ body {
 .provider-organiser-note {
     text-align: center;
     font-size: 0.98rem;
-    color: #666;
+    color: var(--ink-muted);
     max-width: 640px;
     margin: 0 auto;
     padding: 18px 22px;
-    background: #FFF0E6;
+    background: var(--surface-tint);
     border-radius: 12px;
     line-height: 1.6;
 }
@@ -680,7 +689,7 @@ body {
 .provider-audience-title {
     text-align: center;
     font-size: 1.45rem;
-    color: #FF6B35;
+    color: var(--brand-ink);
     margin: 50px 0 22px;
 }
 
@@ -701,7 +710,7 @@ body {
 .use-case-card .use-case-app {
     margin-top: 10px;
     font-size: 0.8rem;
-    color: #FF6B35;
+    color: var(--brand-ink);
     font-weight: 500;
 }
 
