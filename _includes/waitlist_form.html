@@ -4,7 +4,7 @@
         <legend>{{ w.role_legend }}</legend>
         {% for role in w.roles %}
         <label class="waitlist-role">
-            <input type="radio" name="role" value="{{ role.value }}" required>
+            <input type="radio" name="role" value="{{ role.value }}" required{% if forloop.first %} checked{% endif %}>
             <span>{{ role.label }}</span>
         </label>
         {% endfor %}
@@ -25,8 +25,22 @@
         <input class="text-input" id="wl-locality" name="locality" type="text" maxlength="100" autocomplete="address-level2" placeholder="{{ w.locality_placeholder }}">
     </div>
 
+    {% for group in w.choices %}
+    <fieldset class="waitlist-choices" data-choices-for="{{ group.role }}"{% unless forloop.first %} hidden disabled{% endunless %}>
+        <legend>{{ group.legend }} <span class="optional">optional</span></legend>
+        <div class="chips">
+            {% for option in group.options %}
+            <label class="chip-check">
+                <input type="checkbox" name="choices[]" value="{{ option.value }}">
+                <span>{{ option.label }}</span>
+            </label>
+            {% endfor %}
+        </div>
+    </fieldset>
+    {% endfor %}
+
     <div class="waitlist-field">
-        <label for="wl-interest"><span data-interest-label data-labels="{{ w.interest_labels | jsonify | escape }}">{{ w.interest_default }}</span> <span class="optional">optional</span></label>
+        <label for="wl-interest">{{ w.interest_label }} <span class="optional">optional</span></label>
         <input class="text-input" id="wl-interest" name="interest" type="text" maxlength="100" autocomplete="off" placeholder="{{ w.interest_placeholder }}" aria-describedby="wl-interest-hint">
         <p class="field-hint" id="wl-interest-hint">{{ w.interest_hint }}</p>
     </div>
