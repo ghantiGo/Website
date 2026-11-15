@@ -3,6 +3,8 @@ description: "GhantiGo — Mohalle ka timetable. See who is coming to your lane,
 url: "https://www.ghantigo.com"
 baseurl: ""
 
+waitlist_endpoint: "https://api.visiblechain.com/api/pre-registrations"
+
 markdown: kramdown
 permalink: pretty
 

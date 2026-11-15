@@ -3,7 +3,7 @@
     --brand-fill-b: #A93019;
     --brand-ink: #A93019;
     --accent-on-dark: #FF9933;
-    --whatsapp: #075E54;
+    --error: #B3261E;
     --ink: #333;
     --ink-muted: #5C5C5C;
     --ink-dark: #2D2D2D;
@@ -169,25 +169,155 @@ body {
 }
 
 
-.whatsapp-btn {
+
+.btn {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
     min-height: 64px;
-    background: var(--whatsapp);
+    background: var(--brand-fill-b);
     border: 2px solid white;
     color: white;
     padding: 16px 32px;
     border-radius: 50px;
     text-decoration: none;
+    font: inherit;
     font-weight: 600;
     font-size: 1.1rem;
+    cursor: pointer;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.whatsapp-btn:hover,
-.whatsapp-btn:active {
+.btn:hover,
+.btn:active {
     filter: brightness(1.25);
+}
+
+.btn:disabled {
+    filter: grayscale(0.4) brightness(1.2);
+    cursor: progress;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #1A1A1A;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .btn {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+    }
+}
+
+.waitlist {
+    max-width: 480px;
+    margin: 24px auto 0;
+    padding: 24px 20px;
+    background: white;
+    color: var(--ink);
+    border-radius: 16px;
+    text-align: left;
+}
+
+.waitlist fieldset {
+    border: 0;
+    margin: 0 0 16px;
+}
+
+.waitlist legend,
+.waitlist-field > label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.waitlist-role,
+.waitlist-check {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 64px;
+    padding: 8px 12px;
+    border: 1px solid #CFCFCF;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.waitlist-role input,
+.waitlist-check input {
+    width: 24px;
+    height: 24px;
+    flex: none;
+}
+
+.waitlist-field,
+.waitlist-consent {
+    margin-bottom: 16px;
+}
+
+.phone-row {
+    display: flex;
+    align-items: stretch;
+    min-height: 64px;
+    border: 1px solid #767676;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.phone-prefix {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    background: var(--surface-tint);
+    font-weight: 600;
+}
+
+.phone-row input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    padding: 0 12px;
+    font: inherit;
+    font-size: 1.2rem;
+}
+
+.field-error {
+    color: var(--error);
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.waitlist-trap {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.waitlist-submit {
+    width: 100%;
+}
+
+.waitlist-status {
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.waitlist-status.error {
+    color: var(--error);
+}
+
+.waitlist-status.ok {
+    color: #1E6B34;
+    font-size: 1.15rem;
 }
 
 .path-tile:active {
@@ -215,21 +345,6 @@ a:focus-visible {
     top: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .whatsapp-btn {
-        transition: transform 0.3s ease, filter 0.3s ease;
-    }
-
-    .whatsapp-btn:hover {
-        transform: translateY(-3px);
-    }
-}
-
-.whatsapp-btn svg {
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-}
 
 .hero .launch-location {
     margin-top: 20px;
@@ -491,18 +606,6 @@ a:focus-visible {
     color: white;
     font-size: 2.2rem;
     margin-bottom: 25px;
-}
-
-.cta-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px;
-}
-
-.cta-section .whatsapp-btn {
-    font-size: 1.15rem;
-    padding: 18px 40px;
 }
 
 .cta-subtext {

@@ -21,7 +21,7 @@ account_deletion:
   # The resident and peddler apps have a "Delete account" row on the Account /
   # Profile screen that opens the website's deletion page. The Camp app has no
   # such row. The apps do not delete anything themselves; the request is
-  # handled by WhatsApp or email.
+  # handled by email.
   in_app_path:
     - "Account or Profile"
     - "Delete account"

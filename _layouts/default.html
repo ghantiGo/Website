@@ -39,7 +39,8 @@
     </main>
     {% include footer.html %}
     {% if page.url == '/' %}
-    <div class="sticky-action">{% include whatsapp_btn.html %}</div>
+    <div class="sticky-action">{% include join_btn.html %}</div>
+    <script src="{{ '/assets/js/waitlist.js' | relative_url }}" defer></script>
     {% endif %}
 </body>
 </html>

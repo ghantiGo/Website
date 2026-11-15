@@ -25,7 +25,7 @@ layout: default
         <p class="hero-positioning">{{ site.data.hero.positioning }}</p>
         <p class="hero-description">{{ site.data.hero.subhead }}</p>
 
-        {% include whatsapp_btn.html %}
+        {% include join_btn.html %}
         <p class="launch-location">{{ site.data.hero.launch_message }}</p>
 
         <nav class="path-tiles" aria-label="{{ site.data.hero.paths_label }}">
@@ -170,16 +170,12 @@ layout: default
     </div>
 </section>
 
-<!-- 5. One action, same as the hero, with a button per side of the marketplace -->
-<section class="cta-section">
+<!-- 5. One action, same as the hero: the waitlist form -->
+<section class="cta-section" id="join">
     <div class="container">
-        <h2>Get early access to your lane's timetable</h2>
-        <div class="cta-buttons">
-            {% for button in site.data.cta.buttons %}
-            {% include whatsapp_btn.html text=button.text message=button.message %}
-            {% endfor %}
-        </div>
-        <p class="cta-subtext">We reply on WhatsApp within a day. Pune first.</p>
+        <h2>{{ site.data.waitlist.title }}</h2>
+        <p class="cta-subtext">{{ site.data.waitlist.subtitle }}</p>
+        {% include waitlist_form.html %}
         <a class="cta-call" href="tel:{{ site.data.site.contact_phone }}">Prefer a call? {{ site.data.site.contact_phone }}</a>
     </div>
 </section>
