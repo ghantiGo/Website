@@ -16,7 +16,7 @@ urban:
   heading: "In societies and lanes — Mohalle ka timetable, Galli cha timetable"
   recurring:
     heading: "Feriwale & tempo sellers — every week"
-    description: "Mixer, chair and cycle repair, bike wash, knife sharpening, kulfi, jhalmuri, sabzi, iron kadhai — and the tempo or van that comes round, like the government onion van."
+    description: "Mixer, chair and cycle repair, bike wash, knife sharpening, kulfi, jhalmuri, sabzi, iron kadhai — and the tempo or van that comes round."
     photos:
       - image: "/assets/images/feriwale/iron-utensils.webp"
         alt: "Iron utensils seller"
@@ -33,7 +33,7 @@ urban:
   occasional:
     heading: "Camps — once"
     description: "Health, eye, dental, Aadhaar and blood donation camps, collection camps for old idols and books, fairs and exhibitions — announced before the day, with the place, time and what to bring."
-    organiser_note: "Running a camp? Post it in the GhantiGo Camp app."
+    organiser_note: "Running a camp? Join the waitlist as a camp organiser."
 
 rural:
   heading: "In villages — Gaon ka timetable"

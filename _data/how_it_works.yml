@@ -19,11 +19,11 @@ customer_steps:
 
   - heading: "Who's coming, and where"
     hindi: "कौन आएगा, कहाँ दिखा"
-    description: "Photos, a voice note and stops for who is coming today and in the days ahead. For today you see where each was last seen, and how many minutes ago. It opens on weak signal, and you can report a photo or voice note."
+    description: "Photos and a voice note for who is coming. For today you see where each was last seen, and how many minutes ago."
 
-  - heading: "Walk over"
-    hindi: "जाके ले आओ"
-    description: "Ask them to stop at your society, and add a short note if you like. You see how many neighbours asked. Then walk over. Straight from the seller, at their own price."
+  - heading: "Ask them to stop"
+    hindi: "रुकने को कहो"
+    description: "Ask a seller to stop at your society, and add a short note if you like. You see how many neighbours asked. Buy straight from the seller, at their own price."
 
 peddler_title: "For feriwale & tempo sellers"
 peddler_subtitle: "In the GhantiGo Partner app, in English and Hindi"
@@ -39,7 +39,7 @@ peddler_steps:
 
   - heading: "Go online"
     hindi: "ऑनलाइन जाओ"
-    description: "On the day, tap Go online in an area we cover. Residents see where you were last seen — before the kulfi melts. Your day ends when you go offline, or at midnight."
+    description: "On the day, tap Go online in an area we cover. Residents see where you were last seen. Your day ends when you go offline, or at midnight."
 
 camp_title: "For camp organisers"
 camp_subtitle: "In the GhantiGo Camp app"
@@ -54,4 +54,4 @@ camp_steps:
 
   - heading: "Publish"
     hindi: "पोस्ट करो"
-    description: "After a quick check, the area sees it, with the date. Save a draft, change the dates, copy an old camp, or take it down any time."
+    description: "After a check, the area sees it, with the date. Save a draft, change the dates, copy an old camp, or take it down any time."
