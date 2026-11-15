@@ -1,0 +1,33 @@
+# What a resident sees and can do. `kind` picks the tile's size, colour and visual in index.html.
+
+label: "In the app"
+title: "Small things your lane never had."
+
+tiles:
+  - kind: "seen"
+    title: "Last seen, and how long ago."
+    text: "For today, each seller shows where they were last seen in your area."
+    sample: "Last seen at Ganesh Mandir · 6 min ago"
+
+  - kind: "media"
+    title: "See it. Hear it."
+    text: "Photos of the goods and a short voice note, in the seller's own language."
+
+  - kind: "ask"
+    title: "Ask them to stop."
+    text: "Add a short note if you like. You see how many neighbours asked too."
+    sample: "Ask to stop at your society · 4 asked"
+
+  - kind: "price"
+    title: "Their cart, their price."
+    text: "You buy straight from the seller. GhantiGo only tells you who is coming."
+
+  - kind: "camps"
+    title: "Camps, with the date."
+    text: "Health, eye, dental, Aadhaar and blood donation camps show up before the day."
+    sample: "Sat · Eye check-up camp · Community hall"
+
+  - kind: "free"
+    title: "Free for residents."
+    text: "Sign in with your phone number. Pick your area once."
+    sample: "₹0"

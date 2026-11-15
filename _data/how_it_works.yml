@@ -1,57 +1,68 @@
-# How It Works — the ONE place the split by app lives: resident, Partner, Camp.
-#
-# It used to appear twice: a Benefits grid split by persona, then this section
-# split by persona again, back to back. Same division, overlapping content, no
-# new information the second time. The benefit copy now lives inside the step
-# descriptions — the step says what you do, the description says why it's worth
-# doing. Three steps a side is the ceiling; a fourth means something is being
-# explained that should be shown instead.
+# Three apps, one timetable — the one place the split by app lives.
+# `key` picks the panel colour (the app's own icon colours); `anchor` is the id the nav links to.
+# Three steps a panel is the ceiling.
 
-title: "How the lane gets its timetable"
+label: "How it works"
+title: "Three apps. One timetable."
 subtitle: "Feriwale and camps tell your area when they are coming. Residents read the timetable."
 
-customer_title: "For residents"
-customer_subtitle: "In the GhantiGo app"
-customer_steps:
-  - heading: "Pick your area"
-    hindi: "अपना इलाका चुनो"
-    description: "Choose your locality, society or village once, and see the feriwale who come to your lane."
+apps:
+  - key: "resident"
+    anchor: "residents"
+    who: "For residents"
+    app: "GhantiGo"
+    verb: "Read it."
+    verb_hindi: "पढ़ो।"
+    note: "Free. Sign in with your phone number."
+    steps:
+      - heading: "Pick your area"
+        hindi: "अपना इलाका चुनो"
+        description: "Choose your area once, then your society. Add it if it isn't listed."
 
-  - heading: "Who's coming, and where"
-    hindi: "कौन आएगा, कहाँ दिखा"
-    description: "Today's photos, voice note and stops — who is coming today, and where each was last seen."
+      - heading: "Who's coming, and where"
+        hindi: "कौन आएगा, कहाँ दिखा"
+        description: "Photos and a voice note for each visit. For today, where each was last seen and how long ago."
 
-  - heading: "Walk over"
-    hindi: "जाके ले आओ"
-    description: "Message them, then walk over. Straight from the seller, at their own price."
+      - heading: "Ask them to stop"
+        hindi: "रुकने को कहो"
+        description: "Ask a seller to stop at your society, with a short note if you like. You see how many neighbours asked. You buy from the seller, at their price."
 
-peddler_title: "For feriwale & tempo sellers"
-peddler_subtitle: "In the GhantiGo Partner app"
-peddler_plan_note: "Joining is free. Pro, a paid upgrade that lets you plan up to a week ahead, is coming soon."
-peddler_steps:
-  - heading: "Photos & voice note"
-    hindi: "फोटो और आवाज़"
-    description: "Post photos of your goods and a short voice note in your own language."
+  - key: "partner"
+    anchor: "feriwale"
+    who: "For feriwale & tempo sellers"
+    app: "GhantiGo Partner"
+    verb: "Fill it."
+    verb_hindi: "भरो।"
+    note: "In English and Hindi. Joining is free. Our local team can check you in person for a Verified badge, and we keep no documents. Pro, a paid upgrade to plan up to a week ahead, is coming soon."
+    steps:
+      - heading: "Photos & voice note"
+        hindi: "फोटो और आवाज़"
+        description: "Up to 2 photos of your goods and a short voice note each day, in your own language. We check each one and tell you if it needs retaking."
 
-  - heading: "Plan your day"
-    hindi: "अपना दिन तय करो"
-    description: "Pick today's route or stands. Residents see you're coming."
+      - heading: "Plan your day"
+        hindi: "अपना दिन तय करो"
+        description: "Tap today's route or stands on the map. No typing. Residents see you're coming."
 
-  - heading: "Go online"
-    hindi: "ऑनलाइन जाओ"
-    description: "On the day, tap Go online. Residents see where you were last seen — before the kulfi melts."
+      - heading: "Go online"
+        hindi: "ऑनलाइन जाओ"
+        description: "On the day, tap Go online in an area we cover. Residents see where you were last seen. Your day ends when you go offline, or at midnight."
 
-camp_title: "For camp organisers"
-camp_subtitle: "In the GhantiGo Camp app"
-camp_steps:
-  - heading: "Pick the date and place"
-    hindi: "तारीख और जगह"
-    description: "Choose your camp's dates, then pick the locality or pin the ground on the map."
+  - key: "camp"
+    anchor: "camps"
+    who: "For camp organisers"
+    app: "GhantiGo Camp"
+    verb: "Announce it."
+    verb_hindi: "बताओ।"
+    note: "Running a camp? Join the waitlist as a camp organiser."
+    steps:
+      - heading: "Pick the date and place"
+        hindi: "तारीख और जगह"
+        description: "Choose your camp's dates, then pick the locality or pin the ground on the map."
 
-  - heading: "Add a poster and voice"
-    hindi: "पोस्टर और आवाज़"
-    description: "Add photos or make a poster, and record a short voice note in your own language."
+      - heading: "Add a poster and voice"
+        hindi: "पोस्टर और आवाज़"
+        description: "Add up to 3 photos or make a poster, and record a short voice note in your own language."
 
-  - heading: "Publish"
-    hindi: "पोस्ट करो"
-    description: "The area sees it, with the date. On the day, tap We're open."
+      - heading: "Publish"
+        hindi: "पोस्ट करो"
+        description: "After a check, the area sees it, with the date. Save a draft, change the dates, copy an old camp, or take it down any time."

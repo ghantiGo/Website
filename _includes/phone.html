@@ -1,0 +1,33 @@
+{%- assign day = site.data.day -%}
+<figure class="phone" aria-label="{{ day.caption }}: {{ day.app_title }} in the GhantiGo app"{% if include.live %} data-day-phone{% endif %}>
+    <div class="phone-screen">
+        <div class="phone-status" aria-hidden="true">
+            <span data-phone-clock>{{ day.still_clock }}</span>
+            <span class="phone-status-dots"><i></i><i></i><i></i></span>
+        </div>
+        <div class="phone-bar">
+            <strong>{{ day.app_title }}</strong>
+            <span>{{ day.app_place }}</span>
+        </div>
+        <ol class="phone-rows">
+            {%- assign shown_day = "" -%}
+            {%- for moment in day.moments -%}
+            {%- if moment.day != shown_day -%}
+            <li class="phone-day">{{ moment.day }}</li>
+            {%- assign shown_day = moment.day -%}
+            {%- endif -%}
+            <li class="phone-row phone-row--{{ moment.row.icon }}" data-row{% if moment.row.still %} data-still{% endif %}>
+                <span class="phone-tile">{% include path_icon.html name=moment.row.icon size=20 %}</span>
+                <span class="phone-text">
+                    <strong>{{ moment.row.name }}</strong>
+                    <span class="phone-places">{{ moment.row.places }}</span>
+                    {%- if moment.row.seen -%}
+                    <span class="phone-seen">{{ day.seen_prefix }} {{ moment.row.seen }}</span>
+                    {%- endif -%}
+                </span>
+            </li>
+            {%- endfor -%}
+        </ol>
+    </div>
+    <figcaption>{{ day.caption }}</figcaption>
+</figure>

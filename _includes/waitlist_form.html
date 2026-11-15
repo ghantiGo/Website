@@ -1,0 +1,51 @@
+{% assign w = site.data.waitlist %}
+<form id="waitlist-form" class="waitlist" method="post" novalidate data-endpoint="{{ site.waitlist_endpoint }}">
+    <fieldset class="waitlist-roles">
+        <legend>{{ w.role_legend }}</legend>
+        {% for role in w.roles %}
+        <label class="waitlist-role">
+            <input type="radio" name="role" value="{{ role.value }}" required>
+            <span>{{ role.label }}</span>
+        </label>
+        {% endfor %}
+        <p class="field-error" id="wl-role-error" role="alert" hidden></p>
+    </fieldset>
+
+    <div class="waitlist-field">
+        <label for="wl-phone">{{ w.phone_label }}</label>
+        <div class="phone-row">
+            <span class="phone-prefix" aria-hidden="true">+91</span>
+            <input id="wl-phone" name="phone_number" type="tel" inputmode="tel" autocomplete="tel-national" maxlength="20" required aria-describedby="wl-phone-error">
+        </div>
+        <p class="field-error" id="wl-phone-error" role="alert" hidden></p>
+    </div>
+
+    <div class="waitlist-field">
+        <label for="wl-locality">{{ w.locality_label }} <span class="optional">optional</span></label>
+        <input class="text-input" id="wl-locality" name="locality" type="text" maxlength="100" autocomplete="address-level2" placeholder="{{ w.locality_placeholder }}">
+    </div>
+
+    <div class="waitlist-field">
+        <label for="wl-interest"><span data-interest-label data-labels="{{ w.interest_labels | jsonify | escape }}">{{ w.interest_default }}</span> <span class="optional">optional</span></label>
+        <input class="text-input" id="wl-interest" name="interest" type="text" maxlength="100" autocomplete="off" placeholder="{{ w.interest_placeholder }}" aria-describedby="wl-interest-hint">
+        <p class="field-hint" id="wl-interest-hint">{{ w.interest_hint }}</p>
+    </div>
+
+    <div class="waitlist-consent">
+        <label class="waitlist-check">
+            <input type="checkbox" name="consent" value="true" required aria-describedby="wl-consent-error">
+            <span>{{ w.consent_label }}</span>
+        </label>
+        <p class="field-error" id="wl-consent-error" role="alert" hidden></p>
+    </div>
+
+    <div class="waitlist-trap" aria-hidden="true">
+        <label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    </div>
+    <input type="hidden" name="notice_version" value="{{ w.notice_version }}">
+
+    <button type="submit" class="btn waitlist-submit" data-sending="{{ w.sending_text }}">{{ w.submit_text }}</button>
+    <p class="waitlist-status" id="wl-status" role="status" aria-live="polite"></p>
+    <noscript><p class="waitlist-status">{{ w.noscript }}</p></noscript>
+    <script type="application/json" id="wl-messages">{{ w.messages | jsonify }}</script>
+</form>

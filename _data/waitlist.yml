@@ -1,0 +1,42 @@
+# The waitlist form. Phone number only: the one thing we send, once, is an SMS when the apps launch.
+# consent_label and notice_version are placeholders until counsel supplies the wording; the build check fails on "[UPDATE".
+
+title: "Be first in your lane."
+subtitle: "Free. Leave your mobile number. One SMS when the app launches in Pune."
+
+role_legend: "I am a"
+roles:
+  - value: "resident"
+    label: "Resident"
+  - value: "peddler"
+    label: "Feriwala or tempo seller"
+  - value: "camp_manager"
+    label: "Camp organiser"
+
+phone_label: "Mobile number"
+
+locality_label: "Which city or locality?"
+locality_placeholder: "Baner, Pune"
+interest_hint: "Optional. Please don't write personal details."
+interest_default: "What are you looking for, or selling?"
+interest_placeholder: "kulfi, sabzi, knife sharpening"
+interest_labels:
+  resident: "What are you looking for?"
+  peddler: "What do you sell?"
+  camp_manager: "What kind of camp do you run?"
+submit_text: "Join the waitlist"
+sending_text: "Sending…"
+noscript: "Turn on JavaScript to join the waitlist, or call us on the number below."
+
+notice_version: "v2"
+consent_label: "[UPDATE: consent wording from counsel]"
+
+messages:
+  success: "You're on the list. We will tell you when the app launches in Pune."
+  role: "Choose who you are."
+  phone: "Enter a 10-digit mobile number that starts with 6, 7, 8 or 9."
+  consent: "Tick the box to say you agree."
+  too_many: "Too many tries just now. Please wait a few minutes and try again."
+  offline: "No connection right now. Your details are still here, so try again when you are back online."
+  slow: "That took too long. Your details are still here, so please try again."
+  failed: "Something went wrong on our side. Your details are still here, so please try again in a little while."

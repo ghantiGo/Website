@@ -1,48 +1,46 @@
-/* Legal page styles */
 .legal-page {
-    max-width: 800px;
+    max-width: 780px;
     margin: 0 auto;
-    padding: 40px 20px 60px;
-    line-height: 1.8;
-    color: #333;
+    padding: clamp(40px, 7vw, 96px) var(--gutter) clamp(56px, 8vw, 112px);
+    line-height: 1.75;
 }
 
 .legal-page h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 10px;
+    font-stretch: 75%;
+    font-weight: 800;
+    font-size: clamp(2.8rem, 8vw, 5.5rem);
+    line-height: 0.92;
+    letter-spacing: -0.015em;
+    margin-bottom: 16px;
 }
 
 .legal-dates {
-    font-size: 0.9rem;
-    color: var(--ink-muted);
+    font-size: 0.95rem;
+    color: var(--muted);
     margin-bottom: 40px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--rule);
 }
 
 .legal-page h2 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #333;
-    margin-top: 35px;
-    margin-bottom: 15px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #FF9933;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 44px;
+    margin-bottom: 14px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
 }
 
 .legal-page h3 {
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: #444;
-    margin-top: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 26px;
     margin-bottom: 10px;
 }
 
 .legal-page p {
     margin-bottom: 15px;
-    font-size: 1rem;
 }
 
 .legal-page ul,
@@ -51,72 +49,53 @@
     padding-left: 25px;
 }
 
-.legal-page li {
-    margin-bottom: 8px;
-    font-size: 1rem;
+.legal-page ul {
+    list-style: disc;
 }
 
-.legal-page strong {
-    color: #222;
+.legal-page ol {
+    list-style: decimal;
+}
+
+.legal-page li {
+    margin-bottom: 8px;
 }
 
 .legal-page a {
-    color: var(--brand-ink);
+    color: var(--brand-text);
     text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
-.legal-page a:hover {
-    color: var(--brand-fill-a);
-}
-
-/* Grievance Officer card */
-.grievance-card {
-    background: #FFF9F5;
-    border: 1px solid rgba(255, 153, 51, 0.3);
-    border-radius: 12px;
-    padding: 25px;
-    margin: 20px 0;
-}
-
-.grievance-card h3 {
-    color: var(--brand-ink);
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-.grievance-card p {
-    margin-bottom: 8px;
-}
-
-/* Company info card */
-.company-card {
-    background: #f8f8f8;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
-    padding: 25px;
-    margin: 20px 0;
-}
-
-.company-card h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-/* Deletion steps */
+.grievance-card,
+.company-card,
 .deletion-path {
-    background: white;
-    border: 1px solid rgba(255, 153, 51, 0.2);
-    border-radius: 12px;
-    padding: 25px;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 20px;
+    padding: 26px;
     margin: 20px 0;
 }
 
+.grievance-card h3,
+.company-card h3,
 .deletion-path h3 {
-    color: var(--brand-ink);
     margin-top: 0;
+    margin-bottom: 14px;
 }
 
-/* Data table */
+.grievance-card h3,
+.deletion-path h3 {
+    color: var(--brand-text);
+}
+
+.grievance-card ul,
+.company-card ul,
+.support-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 .legal-page table {
     width: 100%;
     border-collapse: collapse;
@@ -127,46 +106,32 @@
 .legal-page td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #eee;
-    font-size: 0.95rem;
+    border-bottom: 1px solid var(--rule);
+    font-size: 0.97rem;
+    vertical-align: top;
 }
 
 .legal-page th {
-    background: #FFF9F5;
-    font-weight: 600;
-    color: #333;
+    background: var(--paper-2);
+    font-weight: 700;
 }
 
-/* Support contact card */
 .support-card {
-    background: linear-gradient(135deg, var(--brand-fill-a) 0%, var(--brand-fill-b) 100%);
-    border-radius: 12px;
+    background: #C4402A;
+    border-radius: 20px;
     padding: 30px;
     margin: 20px 0;
-    color: white;
-    text-align: center;
+    color: #FFFFFF;
 }
 
 .support-card h3 {
-    color: white;
     margin-top: 0;
+    font-stretch: 75%;
+    font-weight: 800;
+    font-size: 2rem;
 }
 
-.support-card a {
-    color: white;
-    font-weight: 600;
-}
-
-@media (max-width: 768px) {
-    .legal-page {
-        padding: 30px 15px 50px;
-    }
-
-    .legal-page h1 {
-        font-size: 1.6rem;
-    }
-
-    .legal-page h2 {
-        font-size: 1.2rem;
-    }
+.legal-page .support-card a {
+    color: #FFFFFF;
+    font-weight: 700;
 }
