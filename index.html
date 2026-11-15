@@ -27,6 +27,15 @@ layout: default
 
         {% include whatsapp_btn.html %}
         <p class="launch-location">{{ site.data.hero.launch_message }}</p>
+
+        <nav class="path-tiles" aria-label="{{ site.data.hero.paths_label }}">
+            {% for path in site.data.hero.paths %}
+            <a class="path-tile" href="{{ path.href }}">
+                {% include path_icon.html name=path.icon %}
+                <span>{{ path.label }}</span>
+            </a>
+            {% endfor %}
+        </nav>
     </div>
 </section>
 

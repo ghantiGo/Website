@@ -22,3 +22,16 @@ positioning: "Not a map. Not a shop. Just a digital ghanti."
 cta_text: "Get Early Access on WhatsApp"
 
 launch_message: "Launching in Pune. More towns and villages soon."
+
+paths_label: "Choose your path"
+
+paths:
+  - label: "Resident"
+    href: "#residents"
+    icon: "home"
+  - label: "Feriwala"
+    href: "#feriwale"
+    icon: "bell"
+  - label: "Camp"
+    href: "#camps"
+    icon: "event"
