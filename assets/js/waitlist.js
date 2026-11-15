@@ -34,7 +34,7 @@
     }
 
     function digits(value) {
-        return value.replace(/[\s\-().]/g, '').replace(/^(\+?91)(?=\d{10}$)/, '');
+        return value.replace(/[\s\-().]/g, '').replace(/^(\+?91|0)(?=\d{10}$)/, '');
     }
 
     function problems() {
@@ -71,6 +71,7 @@
         if (response.status !== 422) return say(text.failed, 'error');
         response.json().then(function (body) {
             var errors = body.errors || {};
+            if (errors.choices) return say(text.failed, 'error');
             showProblems({
                 role: errors.role && text.role,
                 phone: errors.phone_number && text.phone,

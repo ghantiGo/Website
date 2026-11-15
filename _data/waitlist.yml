@@ -1,4 +1,4 @@
-# The waitlist form. Phone number only: the one thing we send, once, is an SMS when the apps launch.
+# The waitlist form. The one thing we send, once, is an SMS when the apps launch.
 # consent_label and notice_version are placeholders until counsel supplies the wording; the build check fails on "[UPDATE".
 
 title: "Be first in your lane."
@@ -7,7 +7,7 @@ subtitle: "Free. Leave your mobile number. One SMS when the app launches in Pune
 role_legend: "I am a"
 roles:
   - value: "resident"
-    label: "Resident"
+    label: "Customer"
   - value: "peddler"
     label: "Feriwala or tempo seller"
   - value: "camp_manager"
@@ -18,12 +18,34 @@ phone_label: "Mobile number"
 locality_label: "Which city or locality?"
 locality_placeholder: "Baner, Pune"
 interest_hint: "Optional. Please don't write personal details."
-interest_default: "What are you looking for, or selling?"
-interest_placeholder: "kulfi, sabzi, knife sharpening"
-interest_labels:
-  resident: "What are you looking for?"
-  peddler: "What do you sell?"
-  camp_manager: "What kind of camp do you run?"
+interest_label: "Anything else?"
+interest_placeholder: "Tell us in your own words"
+choices:
+  - role: "resident"
+    legend: "What are you looking for?"
+    options:
+      - {value: "fruits_vegetables", label: "Fruits and vegetables"}
+      - {value: "ice_cream_kulfi", label: "Ice cream and kulfi"}
+      - {value: "knife_sharpening", label: "Knife sharpening"}
+      - {value: "utensil_repair", label: "Utensil repair and kalai"}
+      - {value: "home_repairs", label: "Home repairs"}
+      - {value: "camps", label: "Camps in my area"}
+  - role: "peddler"
+    legend: "What do you sell?"
+    options:
+      - {value: "fruits_vegetables", label: "Fruits and vegetables"}
+      - {value: "ice_cream_kulfi", label: "Ice cream and kulfi"}
+      - {value: "snacks", label: "Snacks"}
+      - {value: "household_items", label: "Household items"}
+      - {value: "repairs_sharpening", label: "Repairs and sharpening"}
+      - {value: "service", label: "A service"}
+  - role: "camp_manager"
+    legend: "What kind of camp do you run?"
+    options:
+      - {value: "eye_checkup", label: "Eye check-up"}
+      - {value: "blood_donation", label: "Blood donation"}
+      - {value: "vaccination", label: "Vaccination"}
+      - {value: "other_camps", label: "Other camps"}
 submit_text: "Join the waitlist"
 sending_text: "Sending…"
 noscript: "Turn on JavaScript to join the waitlist, or call us on the number below."
@@ -34,7 +56,7 @@ consent_label: "[UPDATE: consent wording from counsel]"
 messages:
   success: "You're on the list. We will tell you when the app launches in Pune."
   role: "Choose who you are."
-  phone: "Enter a 10-digit mobile number that starts with 6, 7, 8 or 9."
+  phone: "Enter your 10-digit mobile number, starting with 6, 7, 8 or 9. A leading 0 is fine."
   consent: "Tick the box to say you agree."
   too_many: "Too many tries just now. Please wait a few minutes and try again."
   offline: "No connection right now. Your details are still here, so try again when you are back online."

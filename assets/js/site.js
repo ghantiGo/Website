@@ -49,13 +49,18 @@
         each(document.querySelectorAll('.reveal'), function (el) { reveal.observe(el); });
     }
 
-    var interest = document.querySelector('[data-interest-label]');
-    if (interest) {
-        var labels = JSON.parse(interest.getAttribute('data-labels'));
-        each(document.querySelectorAll('input[name="role"]'), function (radio) {
-            radio.addEventListener('change', function () {
-                if (radio.checked && labels[radio.value]) interest.textContent = labels[radio.value];
+    var groups = document.querySelectorAll('[data-choices-for]');
+    if (groups.length) {
+        var showChoices = function (role) {
+            each(groups, function (group) {
+                var on = group.getAttribute('data-choices-for') === role;
+                group.hidden = !on;
+                group.disabled = !on;
             });
+        };
+        each(document.querySelectorAll('input[name="role"]'), function (radio) {
+            radio.addEventListener('change', function () { if (radio.checked) showChoices(radio.value); });
+            if (radio.checked) showChoices(radio.value);
         });
     }
 
