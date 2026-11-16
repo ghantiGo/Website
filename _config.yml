@@ -4,6 +4,7 @@ url: "https://www.ghantigo.com"
 baseurl: ""
 
 waitlist_endpoint: "https://api.visiblechain.com/api/pre-registrations"
+deletion_endpoint: "https://api.visiblechain.com/api/account-deletion"
 
 markdown: kramdown
 permalink: pretty

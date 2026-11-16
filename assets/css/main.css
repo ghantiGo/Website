@@ -1835,3 +1835,14 @@ ul {
     from { filter: grayscale(1) contrast(0.9); }
     to { filter: none; }
 }
+
+.deletion-back {
+    min-height: 48px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--muted);
+    font: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}

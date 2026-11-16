@@ -16,14 +16,16 @@ grievance_officer:
 
 # Account deletion
 account_deletion:
+  # Only for captains, who are appointed by an admin, and for anyone who has lost their number.
   email: "[UPDATE: delete@ghantigo.com]"
+  # Personal data is erased at once when the code is confirmed; this is the promised outer limit.
   processing_time: "30 days"
-  # The resident and peddler apps have a "Delete account" row on the Account /
-  # Profile screen that opens the website's deletion page. The Camp app has no
-  # such row. The apps do not delete anything themselves; the request is
-  # handled by email.
+  # The resident, partner and Camp apps each have a quiet "Delete account" row
+  # under "Privacy" on the Account / Profile screen that opens the website's
+  # deletion page.
   in_app_path:
     - "Account or Profile"
+    - "Privacy"
     - "Delete account"
 
 # Third-party services (must be disclosed in Privacy Policy).
@@ -46,7 +48,7 @@ data_retention:
   usage_days: 180
   usage_archive_days: 730
   security_logs_days: 365 # Minimum 1 year per DPDP Rules 2025
-  account_data_after_deletion_days: 90 # Grace period for legal obligations
+  account_data_after_deletion_days: 365 # Security and audit records, identity already removed
 
 # Policy dates — bumped when the substance changes.
 privacy_policy:
