@@ -1,0 +1,231 @@
+.explain {
+    padding-block: clamp(28px, 4vw, 56px) clamp(64px, 9vw, 128px);
+}
+
+.explain-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px 32px;
+    margin-bottom: clamp(20px, 3vw, 36px);
+}
+
+.explain-title {
+    font-stretch: 75%;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 5.4vw, 4.4rem);
+    line-height: 0.95;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+}
+
+.explain-settings {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 20px;
+}
+
+.explain-mode {
+    display: inline-flex;
+    padding: 4px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+}
+
+.explain-seg,
+.explain-play,
+.explain-btn,
+.explain-lang select {
+    min-height: 48px;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.explain-seg {
+    padding: 0 20px;
+}
+
+.explain-seg[aria-pressed="true"] {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.explain-lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.explain-lang select {
+    padding: 0 16px;
+    border: 1px solid var(--rule);
+    font-size: 1.0625rem;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.explain-slides {
+    display: grid;
+    gap: clamp(32px, 5vw, 64px);
+}
+
+.explain-ready .explain-slides {
+    gap: 0;
+}
+
+.explain-ready .explain-slide:not(.is-active) {
+    display: none;
+}
+
+.explain-stage {
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: #FFFFFF;
+    aspect-ratio: 16 / 9;
+    max-height: max(240px, calc(100svh - var(--nav-h) - 440px));
+    width: 100%;
+    touch-action: pan-y;
+}
+
+.explain-svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.explain-svg text {
+    font-family: var(--face);
+}
+
+.explain-text {
+    display: grid;
+    justify-items: start;
+    gap: 8px;
+    margin-top: clamp(16px, 2.4vw, 28px);
+}
+
+.explain-ready .explain-text {
+    min-height: 8.5em;
+    align-content: start;
+}
+
+.explain-count {
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+}
+
+.explain-caption {
+    max-width: 30ch;
+    font-size: clamp(1.5rem, 3.2vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+.explain-caption:lang(hi),
+.explain-caption:lang(mr) {
+    line-height: 1.45;
+}
+
+.explain-join {
+    margin-top: 12px;
+}
+
+.explain-bar {
+    margin-top: clamp(16px, 2.4vw, 28px);
+}
+
+.explain-progress {
+    height: 4px;
+    border-radius: 999px;
+    background: var(--rule);
+    overflow: hidden;
+}
+
+.explain-progress span {
+    display: block;
+    width: 0;
+    height: 100%;
+    background: var(--brand);
+}
+
+.explain-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+    margin-top: 12px;
+}
+
+.explain-btn {
+    display: inline-grid;
+    place-items: center;
+    width: 48px;
+    border: 1px solid var(--rule);
+}
+
+.explain-btn[data-explain-prev] .icon {
+    transform: scaleX(-1);
+}
+
+.explain-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.explain-dots {
+    display: flex;
+    align-items: center;
+}
+
+.explain-dot {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 48px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.explain-dot::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--rule);
+}
+
+.explain-dot[aria-current="true"]::before {
+    background: var(--brand);
+}
+
+.explain-play {
+    margin-left: auto;
+    padding: 0 20px;
+    border: 1px solid var(--rule);
+}
+
+@media (max-width: 700px) {
+    .explain-stage {
+        aspect-ratio: 25 / 17;
+    }
+
+    .explain-dot {
+        width: 22px;
+    }
+}

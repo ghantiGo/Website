@@ -1,0 +1,30 @@
+# GhantiGo in three pictures — the idea as a cartoon, straight under the hero.
+# `key` picks the drawing in _includes/explainer_art.html; `alt` is what a screen reader hears for it.
+# Three panels is the ceiling.
+
+label: "In short"
+title: "GhantiGo in three pictures."
+
+panels:
+  - key: "plan"
+    caption: "Sellers and camps say when they are coming."
+    hindi: "फेरीवाले और कैंप बताते हैं कब आएँगे"
+    alt: "A seller in a green bell cap stands by a kulfi cart with a phone. Beside the seller, a camp organiser in a yellow bell cap holds up an eye camp banner."
+
+  - key: "read"
+    caption: "You see it on your phone."
+    hindi: "आप फोन पर देखते हैं"
+    alt: "A resident in a red bell cap stands on an upper-floor balcony and reads a phone. The screen lists kulfi, coming today and last seen 10 minutes ago, and an eye camp on Saturday."
+
+  - key: "meet"
+    caption: "You step out in time and buy from the seller directly."
+    hindi: "आप समय पर नीचे आकर सीधे खरीदते हैं"
+    alt: "The resident stands at the kulfi cart holding a kulfi, with the seller on the other side."
+
+watch:
+  label: "Watch it step by step"
+  href: "/explain/"
+
+more:
+  label: "See how each app works"
+  href: "#how-it-works"

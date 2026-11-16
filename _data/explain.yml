@@ -1,0 +1,99 @@
+# /explain/ — the idea as seven animated slides.
+# To add a language: add it to `languages`, then add its code under `ui` and under each slide's `caption`.
+# A missing line falls back to English. `alt` is what a screen reader hears for the picture.
+
+title: "How GhantiGo works"
+description: "GhantiGo in seven short slides: sellers and camps say when they are coming, and you see it on your phone."
+
+languages:
+  - code: "en"
+    name: "English"
+  - code: "hi"
+    name: "हिन्दी"
+  - code: "mr"
+    name: "मराठी"
+
+ui:
+  en:
+    heading: "How GhantiGo works"
+    auto: "Auto"
+    manual: "Manual"
+    mode: "Playback"
+    previous: "Previous"
+    next: "Next"
+    pause: "Pause"
+    play: "Play"
+    replay: "Play again"
+    language: "Captions"
+    join: "Join the waitlist"
+    slide: "Slide"
+  hi:
+    heading: "GhantiGo कैसे काम करता है"
+    auto: "अपने आप"
+    manual: "खुद चलाएँ"
+    mode: "चलाने का तरीका"
+    previous: "पिछला"
+    next: "अगला"
+    pause: "रोकें"
+    play: "चलाएँ"
+    replay: "फिर से चलाएँ"
+    language: "भाषा"
+    join: "वेटलिस्ट में जुड़ें"
+    slide: "स्लाइड"
+  mr:
+    heading: "GhantiGo कसे काम करते"
+    auto: "आपोआप"
+    manual: "स्वतः चालवा"
+    mode: "चालवण्याची पद्धत"
+    previous: "मागे"
+    next: "पुढे"
+    pause: "थांबवा"
+    play: "चालवा"
+    replay: "पुन्हा चालवा"
+    language: "भाषा"
+    join: "वेटलिस्टमध्ये सामील व्हा"
+    slide: "स्लाइड"
+
+slides:
+  - alt: "A seller pushes a kulfi cart along the lane and out of view while a resident stands on an upper-floor balcony."
+    caption:
+      en: "Sellers pass your lane every day. From upstairs, you often miss them."
+      hi: "फेरीवाले रोज़ आपकी गली से गुज़रते हैं। ऊपर की मंज़िल से अक्सर पता ही नहीं चलता।"
+      mr: "फेरीवाले रोज तुमच्या गल्लीतून जातात. वरच्या मजल्यावरून अनेकदा कळतच नाही."
+
+  - alt: "A seller stands by the kulfi cart and holds up a phone."
+    caption:
+      en: "With GhantiGo, a seller says which days and where they are coming."
+      hi: "GhantiGo पर फेरीवाला बताता है कि वह किस दिन और कहाँ आएगा।"
+      mr: "GhantiGo वर फेरीवाला सांगतो की तो कोणत्या दिवशी आणि कुठे येणार."
+
+  - alt: "A camp organiser holds a camp banner next to an eye camp tent."
+    caption:
+      en: "Camp organisers announce their date and place."
+      hi: "कैंप लगाने वाले अपनी तारीख और जगह बताते हैं।"
+      mr: "कॅम्प आयोजक त्यांची तारीख आणि ठिकाण जाहीर करतात."
+
+  - alt: "A resident on a balcony reads a phone. The screen lists kulfi, coming today and last seen 10 minutes ago, and an eye camp on Saturday."
+    caption:
+      en: "You see it on your phone: who is coming, and where each was last seen today."
+      hi: "आप फोन पर देखते हैं: कौन आने वाला है, और आज कौन आख़िरी बार कहाँ दिखा।"
+      mr: "तुम्ही फोनवर पाहता: कोण येणार आहे, आणि आज कोण शेवटचे कुठे दिसले."
+
+  - alt: "A resident holds a phone. A bubble reads: Ask to stop, 3 neighbours asked."
+    caption:
+      en: "Want them to stop at your society? Ask. You see how many neighbours asked too."
+      hi: "चाहते हैं कि वे आपकी सोसाइटी पर रुकें? कह दीजिए। कितने पड़ोसियों ने कहा, यह भी दिखता है।"
+      mr: "ते तुमच्या सोसायटीजवळ थांबावेत असे वाटते? सांगा. किती शेजाऱ्यांनी सांगितले, तेही दिसते."
+
+  - alt: "The resident stands at the kulfi cart holding a kulfi, with the seller on the other side."
+    caption:
+      en: "You step out in time and buy from the seller directly, at their price."
+      hi: "आप समय पर नीचे आते हैं और सीधे फेरीवाले से, उसके दाम पर खरीदते हैं।"
+      mr: "तुम्ही वेळेवर खाली येता आणि थेट फेरीवाल्याकडून, त्याच्या भावात खरेदी करता."
+
+  - alt: "A resident, a seller and a camp organiser stand together and wave."
+    join: true
+    caption:
+      en: "Launching in Pune. Free."
+      hi: "पुणे में शुरू हो रहा है। मुफ़्त।"
+      mr: "पुण्यात सुरू होत आहे. मोफत."

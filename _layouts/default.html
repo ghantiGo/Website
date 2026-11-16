@@ -32,6 +32,9 @@
     {% if page.layout == 'legal' %}
     <link rel="stylesheet" href="{{ '/assets/css/legal.css' | relative_url }}">
     {% endif %}
+    {% for style in page.styles %}
+    <link rel="stylesheet" href="{{ style | relative_url }}">
+    {% endfor %}
     <script>document.documentElement.classList.add('js');</script>
 </head>
 <body class="scope">
@@ -45,5 +48,8 @@
     {% if page.url == '/' %}
     <script src="{{ '/assets/js/waitlist.js' | relative_url }}" defer></script>
     {% endif %}
+    {% for script in page.scripts %}
+    <script src="{{ script | relative_url }}" defer></script>
+    {% endfor %}
 </body>
 </html>

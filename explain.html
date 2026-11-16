@@ -1,0 +1,67 @@
+---
+layout: default
+title: "How GhantiGo works"
+description: "GhantiGo in seven short slides: sellers and camps say when they are coming, and you see it on your phone."
+permalink: /explain/
+styles:
+  - /assets/css/explain.css
+scripts:
+  - /assets/js/vendor/gsap.min.js
+  - /assets/js/explain.js
+---
+{%- assign explain = site.data.explain -%}
+{%- assign ui = explain.ui.en -%}
+<section class="explain" data-explain>
+    <div class="wrap">
+        <header class="explain-head">
+            <h1 class="explain-title" data-ui="heading">{{ ui.heading }}</h1>
+            <div class="explain-settings" data-explain-controls hidden>
+                <div class="explain-mode" role="group" aria-label="{{ ui.mode }}" data-ui-label="mode">
+                    <button type="button" class="explain-seg" data-mode="auto" aria-pressed="true" data-ui="auto">{{ ui.auto }}</button>
+                    <button type="button" class="explain-seg" data-mode="manual" aria-pressed="false" data-ui="manual">{{ ui.manual }}</button>
+                </div>
+                <label class="explain-lang">
+                    <span data-ui="language">{{ ui.language }}</span>
+                    <select data-explain-lang>
+                        {% for language in explain.languages %}
+                        <option value="{{ language.code }}" lang="{{ language.code }}">{{ language.name }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
+            </div>
+        </header>
+
+        <ol class="explain-slides">
+            {% for slide in explain.slides %}
+            <li class="explain-slide" data-slide>
+                <div class="explain-stage">{% include explain_scenes.html n=forloop.index alt=slide.alt %}</div>
+                <div class="explain-text">
+                    <p class="explain-count" aria-hidden="true">{{ forloop.index }} / {{ forloop.length }}</p>
+                    {% for language in explain.languages %}
+                    {%- assign line = slide.caption[language.code] | default: slide.caption.en -%}
+                    <p class="explain-caption" lang="{{ language.code }}" data-lang="{{ language.code }}"{% unless language.code == "en" %} hidden{% endunless %}>{{ line }}</p>
+                    {% endfor %}
+                    {% if slide.join %}
+                    <a class="btn btn--brand explain-join" href="{{ '/#join' | relative_url }}" data-ui="join">{{ ui.join }}</a>
+                    {% endif %}
+                </div>
+            </li>
+            {% endfor %}
+        </ol>
+
+        <div class="explain-bar" data-explain-controls hidden>
+            <div class="explain-progress" aria-hidden="true"><span data-explain-progress></span></div>
+            <div class="explain-nav">
+                <button type="button" class="explain-btn" data-explain-prev data-ui-label="previous" aria-label="{{ ui.previous }}">{% include path_icon.html name="arrow" size=22 %}</button>
+                <ol class="explain-dots">
+                    {% for slide in explain.slides %}
+                    <li><button type="button" class="explain-dot" data-explain-dot aria-label="{{ ui.slide }} {{ forloop.index }}"></button></li>
+                    {% endfor %}
+                </ol>
+                <button type="button" class="explain-btn" data-explain-next data-ui-label="next" aria-label="{{ ui.next }}">{% include path_icon.html name="arrow" size=22 %}</button>
+                <button type="button" class="explain-play" data-explain-play>{{ ui.pause }}</button>
+            </div>
+        </div>
+    </div>
+    <script type="application/json" data-explain-ui>{{ explain.ui | jsonify }}</script>
+</section>

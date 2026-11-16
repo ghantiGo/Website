@@ -636,6 +636,78 @@ ul {
     color: color-mix(in srgb, var(--ink) 22%, transparent);
 }
 
+.explainer-panels {
+    display: grid;
+    gap: clamp(32px, 4vw, 48px);
+    margin-top: clamp(32px, 5vw, 72px);
+}
+
+.explainer-art {
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.explainer-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: var(--face);
+}
+
+.explainer-sky {
+    fill: #FFFFFF;
+}
+
+.explainer-svg text {
+    font-family: var(--face);
+}
+
+.explainer-no {
+    margin-top: 18px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+}
+
+.explainer-caption {
+    margin-top: 6px;
+    font-size: clamp(1.3rem, 1.9vw, 1.7rem);
+    font-weight: 700;
+    line-height: 1.15;
+    text-wrap: balance;
+}
+
+.explainer-hindi {
+    margin-top: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--brand-text);
+}
+
+.explainer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 32px;
+    margin-top: clamp(28px, 4vw, 48px);
+}
+
+.explainer-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 48px;
+    font-weight: 700;
+    color: var(--brand-text);
+}
+
+@media (min-width: 700px) {
+    .explainer-panels {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .statements {
     margin-top: clamp(40px, 6vw, 88px);
     border-bottom: 1px solid var(--rule);
