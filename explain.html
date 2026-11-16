@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "How GhantiGo works"
-description: "GhantiGo in seven short slides: sellers and camps say when they are coming, and you see it on your phone."
+title: "GhantiGo, explained"
+description: "GhantiGo in short animated chapters: how it works, the gap it fills, what changes, and where it sits."
 permalink: /explain/
 styles:
   - /assets/css/explain.css
@@ -11,6 +11,7 @@ scripts:
 ---
 {%- assign explain = site.data.explain -%}
 {%- assign ui = explain.ui.en -%}
+{%- assign n = 0 -%}
 <section class="explain" data-explain>
     <div class="wrap">
         <header class="explain-head">
@@ -31,33 +32,49 @@ scripts:
             </div>
         </header>
 
-        <ol class="explain-slides">
-            {% for slide in explain.slides %}
-            <li class="explain-slide" data-slide>
-                <div class="explain-stage">{% include explain_scenes.html n=forloop.index alt=slide.alt %}</div>
-                <div class="explain-text">
-                    <p class="explain-count" aria-hidden="true">{{ forloop.index }} / {{ forloop.length }}</p>
-                    {% for language in explain.languages %}
-                    {%- assign line = slide.caption[language.code] | default: slide.caption.en -%}
-                    <p class="explain-caption" lang="{{ language.code }}" data-lang="{{ language.code }}"{% unless language.code == "en" %} hidden{% endunless %}>{{ line }}</p>
-                    {% endfor %}
-                    {% if slide.join %}
-                    <a class="btn btn--brand explain-join" href="{{ '/#join' | relative_url }}" data-ui="join">{{ ui.join }}</a>
-                    {% endif %}
-                </div>
-            </li>
+        <div class="explain-tabs" role="group" aria-label="{{ ui.chapters }}" data-ui-label="chapters" data-explain-controls hidden>
+            {% for deck in explain.decks %}
+            <button type="button" class="explain-tab" data-deck-tab="{{ deck.key }}" aria-pressed="false">
+                {%- for language in explain.languages -%}
+                <span lang="{{ language.code }}" data-lang="{{ language.code }}"{% unless language.code == "en" %} hidden{% endunless %}>{{ deck.name[language.code] | default: deck.name.en }}</span>
+                {%- endfor -%}
+            </button>
             {% endfor %}
-        </ol>
+        </div>
+
+        {% for deck in explain.decks %}
+        <section class="explain-deck" data-deck="{{ deck.key }}">
+            <h2 class="explain-deck-title">
+                {%- for language in explain.languages -%}
+                <span lang="{{ language.code }}" data-lang="{{ language.code }}"{% unless language.code == "en" %} hidden{% endunless %}>{{ deck.title[language.code] | default: deck.title.en }}</span>
+                {%- endfor -%}
+            </h2>
+            <ol class="explain-slides">
+                {% for slide in deck.slides %}
+                {%- assign n = n | plus: 1 -%}
+                <li class="explain-slide" data-slide data-n="{{ n }}">
+                    <div class="explain-stage">{% include explain_scenes.html n=n alt=slide.alt %}</div>
+                    <div class="explain-text">
+                        <p class="explain-count" aria-hidden="true">{{ forloop.index }} / {{ forloop.length }}</p>
+                        {% for language in explain.languages %}
+                        {%- assign line = slide.caption[language.code] | default: slide.caption.en -%}
+                        <p class="explain-caption" lang="{{ language.code }}" data-lang="{{ language.code }}"{% unless language.code == "en" %} hidden{% endunless %}>{{ line }}</p>
+                        {% endfor %}
+                        {% if slide.join %}
+                        <a class="btn btn--brand explain-join" href="{{ '/#join' | relative_url }}" data-ui="join">{{ ui.join }}</a>
+                        {% endif %}
+                    </div>
+                </li>
+                {% endfor %}
+            </ol>
+        </section>
+        {% endfor %}
 
         <div class="explain-bar" data-explain-controls hidden>
             <div class="explain-progress" aria-hidden="true"><span data-explain-progress></span></div>
             <div class="explain-nav">
                 <button type="button" class="explain-btn" data-explain-prev data-ui-label="previous" aria-label="{{ ui.previous }}">{% include path_icon.html name="arrow" size=22 %}</button>
-                <ol class="explain-dots">
-                    {% for slide in explain.slides %}
-                    <li><button type="button" class="explain-dot" data-explain-dot aria-label="{{ ui.slide }} {{ forloop.index }}"></button></li>
-                    {% endfor %}
-                </ol>
+                <ol class="explain-dots" data-explain-dots></ol>
                 <button type="button" class="explain-btn" data-explain-next data-ui-label="next" aria-label="{{ ui.next }}">{% include path_icon.html name="arrow" size=22 %}</button>
                 <button type="button" class="explain-play" data-explain-play>{{ ui.pause }}</button>
             </div>
