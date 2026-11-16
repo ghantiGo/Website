@@ -1,0 +1,220 @@
+# /explain/ — GhantiGo explained in four short chapters of animated slides.
+# To add a language: add it to `languages`, then add its code under `ui`, each deck's `name` and `title`, and each slide's `caption`.
+# A missing line falls back to English. `alt` is what a screen reader hears for the picture.
+# Slides are drawn in order by _includes/explain_scenes.html: the first slide of the first deck is picture 1, and so on.
+
+title: "GhantiGo, explained"
+description: "GhantiGo in short animated chapters: how it works, the gap it fills, what changes, and where it sits."
+
+languages:
+  - code: "en"
+    name: "English"
+  - code: "hi"
+    name: "हिन्दी"
+  - code: "mr"
+    name: "मराठी"
+
+ui:
+  en:
+    heading: "GhantiGo, explained"
+    chapters: "Chapters"
+    auto: "Auto"
+    manual: "Manual"
+    mode: "Playback"
+    previous: "Previous"
+    next: "Next"
+    next_deck: "Next"
+    pause: "Pause"
+    play: "Play"
+    replay: "Play again"
+    language: "Captions"
+    join: "Join the waitlist"
+    slide: "Slide"
+  hi:
+    heading: "GhantiGo, आसान भाषा में"
+    chapters: "अध्याय"
+    auto: "अपने आप"
+    manual: "खुद चलाएँ"
+    mode: "चलाने का तरीका"
+    previous: "पिछला"
+    next: "अगला"
+    next_deck: "आगे"
+    pause: "रोकें"
+    play: "चलाएँ"
+    replay: "फिर से चलाएँ"
+    language: "भाषा"
+    join: "वेटलिस्ट में जुड़ें"
+    slide: "स्लाइड"
+  mr:
+    heading: "GhantiGo, सोप्या भाषेत"
+    chapters: "प्रकरणे"
+    auto: "आपोआप"
+    manual: "स्वतः चालवा"
+    mode: "चालवण्याची पद्धत"
+    previous: "मागे"
+    next: "पुढे"
+    next_deck: "पुढे"
+    pause: "थांबवा"
+    play: "चालवा"
+    replay: "पुन्हा चालवा"
+    language: "भाषा"
+    join: "वेटलिस्टमध्ये सामील व्हा"
+    slide: "स्लाइड"
+
+decks:
+  - key: "how"
+    name:
+      en: "How it works"
+      hi: "कैसे काम करता है"
+      mr: "कसे काम करते"
+    title:
+      en: "How GhantiGo works"
+      hi: "GhantiGo कैसे काम करता है"
+      mr: "GhantiGo कसे काम करते"
+    slides:
+      - alt: "A seller pushes a kulfi cart along the lane and out of view while a resident stands on an upper-floor balcony."
+        caption:
+          en: "Sellers pass your lane every day. From upstairs, you often miss them."
+          hi: "फेरीवाले रोज़ आपकी गली से गुज़रते हैं। ऊपर की मंज़िल से अक्सर पता ही नहीं चलता।"
+          mr: "फेरीवाले रोज तुमच्या गल्लीतून जातात. वरच्या मजल्यावरून अनेकदा कळतच नाही."
+
+      - alt: "A seller stands by the kulfi cart and holds up a phone."
+        caption:
+          en: "With GhantiGo, a seller says which days and where they are coming."
+          hi: "GhantiGo पर फेरीवाला बताता है कि वह किस दिन और कहाँ आएगा।"
+          mr: "GhantiGo वर फेरीवाला सांगतो की तो कोणत्या दिवशी आणि कुठे येणार."
+
+      - alt: "A camp organiser holds a camp banner next to an eye camp tent."
+        caption:
+          en: "Camp organisers announce their date and place."
+          hi: "कैंप लगाने वाले अपनी तारीख और जगह बताते हैं।"
+          mr: "कॅम्प आयोजक त्यांची तारीख आणि ठिकाण जाहीर करतात."
+
+      - alt: "A resident on a balcony reads a phone. The screen lists kulfi, coming today and last seen 10 minutes ago, and an eye camp on Saturday."
+        caption:
+          en: "You see it on your phone: who is coming, and where each was last seen today."
+          hi: "आप फोन पर देखते हैं: कौन आने वाला है, और आज कौन आख़िरी बार कहाँ दिखा।"
+          mr: "तुम्ही फोनवर पाहता: कोण येणार आहे, आणि आज कोण शेवटचे कुठे दिसले."
+
+      - alt: "A resident holds a phone. A bubble reads: Ask to stop, 3 neighbours asked."
+        caption:
+          en: "Want them to stop at your society? Ask. You see how many neighbours asked too."
+          hi: "चाहते हैं कि वे आपकी सोसाइटी पर रुकें? कह दीजिए। कितने पड़ोसियों ने कहा, यह भी दिखता है।"
+          mr: "ते तुमच्या सोसायटीजवळ थांबावेत असे वाटते? सांगा. किती शेजाऱ्यांनी सांगितले, तेही दिसते."
+
+      - alt: "The resident stands at the kulfi cart holding a kulfi, with the seller on the other side."
+        caption:
+          en: "You step out in time and buy from the seller directly, at their price."
+          hi: "आप समय पर नीचे आते हैं और सीधे फेरीवाले से, उसके दाम पर खरीदते हैं।"
+          mr: "तुम्ही वेळेवर खाली येता आणि थेट फेरीवाल्याकडून, त्याच्या भावात खरेदी करता."
+
+      - alt: "A resident, a seller and a camp organiser stand together and wave."
+        join: true
+        caption:
+          en: "Launching in Pune. Free."
+          hi: "पुणे में शुरू हो रहा है। मुफ़्त।"
+          mr: "पुण्यात सुरू होत आहे. मोफत."
+
+  - key: "gap"
+    name:
+      en: "The gap"
+      hi: "कमी कहाँ है"
+      mr: "उणीव कुठे आहे"
+    title:
+      en: "A gap we saw in Indian cities"
+      hi: "भारतीय शहरों में हमें जो कमी दिखी"
+      mr: "भारतीय शहरांत आम्हाला दिसलेली उणीव"
+    slides:
+      - alt: "A seller with a kulfi cart stands outside a closed society gate. A resident stands behind the wall."
+        caption:
+          en: "Societies are gated now. The seller cannot walk in, so the wall stops the sale."
+          hi: "अब सोसाइटियों में गेट है। फेरीवाला अंदर नहीं आ सकता, तो बिक्री दीवार पर ही रुक जाती है।"
+          mr: "आता सोसायट्यांना गेट आहे. फेरीवाला आत येऊ शकत नाही, त्यामुळे विक्री भिंतीपाशीच थांबते."
+
+      - alt: "One seller calls out beside a vegetable cart. A younger seller stands quietly, with the call-out mark crossed out."
+        caption:
+          en: "Many younger sellers feel awkward calling out in the lane, even when selling direct pays better than the wholesale mandi."
+          hi: "कई नए, पढ़े-लिखे विक्रेताओं को गली में आवाज़ लगाने में झिझक होती है, जबकि सीधे बेचने पर थोक मंडी से बेहतर दाम मिलता है।"
+          mr: "अनेक तरुण, शिकलेल्या विक्रेत्यांना गल्लीत हाक मारायला संकोच वाटतो, जरी थेट विकल्यास घाऊक मंडईपेक्षा चांगला भाव मिळतो."
+
+      - alt: "On one side a resident holds a sealed delivery box marked with a question mark. On the other a resident picks a vegetable from a basket."
+        caption:
+          en: "With quick commerce you cannot look, pick and check before you pay."
+          hi: "क्विक कॉमर्स में पैसे देने से पहले आप देख, छाँट और परख नहीं सकते।"
+          mr: "क्विक कॉमर्समध्ये पैसे देण्याआधी तुम्ही पाहू, निवडू आणि पारखू शकत नाही."
+
+      - alt: "A broken mixer sits in a bin. A resident looks at a box marked new."
+        caption:
+          en: "The repair centre is far, so people replace things they could have repaired. The old one becomes waste."
+          hi: "रिपेयर सेंटर दूर है, इसलिए लोग ठीक हो सकने वाली चीज़ भी बदल देते हैं। पुरानी चीज़ कचरा बन जाती है।"
+          mr: "दुरुस्ती केंद्र दूर असते, म्हणून दुरुस्त होऊ शकणारी वस्तूही लोक बदलतात. जुनी वस्तू कचरा बनते."
+
+      - alt: "A repairer with a sharpening wheel stands in front of a shuttered shop with a tag that reads rent, with an arrow pointing up."
+        caption:
+          en: "A repairer cannot afford a fixed shop: too little demand in one place, and rent keeps rising."
+          hi: "मरम्मत करने वाला पक्की दुकान नहीं ले पाता: एक जगह काम कम है और किराया बढ़ता जा रहा है।"
+          mr: "दुरुस्ती करणाऱ्याला कायमचे दुकान परवडत नाही: एका जागी काम कमी आणि भाडे वाढतच जाते."
+
+  - key: "change"
+    name:
+      en: "What changes"
+      hi: "क्या बदलता है"
+      mr: "काय बदलते"
+    title:
+      en: "What changes with GhantiGo"
+      hi: "GhantiGo से क्या बदलता है"
+      mr: "GhantiGo मुळे काय बदलते"
+    slides:
+      - alt: "A resident holds up a vegetable at a seller's cart, with the seller on the other side."
+        caption:
+          en: "You look, pick and agree the price yourself, with the seller."
+          hi: "आप खुद देखते हैं, छाँटते हैं और विक्रेता से दाम तय करते हैं।"
+          mr: "तुम्ही स्वतः पाहता, निवडता आणि विक्रेत्याशी भाव ठरवता."
+
+      - alt: "A knife sharpener works at a sharpening wheel near a building. A resident holds a knife."
+        caption:
+          en: "Repair comes near your home, so more things get mended and fewer get thrown away."
+          hi: "मरम्मत आपके घर के पास आती है, तो ज़्यादा चीज़ें ठीक होती हैं और कम फेंकी जाती हैं।"
+          mr: "दुरुस्ती तुमच्या घराजवळ येते, त्यामुळे जास्त वस्तू दुरुस्त होतात आणि कमी फेकल्या जातात."
+
+      - alt: "A resident, a seller and a camp organiser wave beside a phone showing the timetable."
+        join: true
+        caption:
+          en: "GhantiGo: sellers and camps say when they are coming. You see it on your phone. Launching in Pune. Free."
+          hi: "GhantiGo: फेरीवाले और कैंप बताते हैं कि वे कब आ रहे हैं। आप फोन पर देखते हैं। पुणे में शुरू हो रहा है। मुफ़्त।"
+          mr: "GhantiGo: फेरीवाले आणि कॅम्प सांगतात की ते कधी येणार. तुम्ही फोनवर पाहता. पुण्यात सुरू होत आहे. मोफत."
+
+  - key: "position"
+    name:
+      en: "Where it sits"
+      hi: "GhantiGo की जगह"
+      mr: "GhantiGo चे स्थान"
+    title:
+      en: "Where GhantiGo sits"
+      hi: "GhantiGo कहाँ बैठता है"
+      mr: "GhantiGo कुठे बसते"
+    slides:
+      - alt: "A chart with columns for wholesale, shops and street vendors. In the discovery row: wholesale, visit; shops, visit, phone call or WhatsApp; street vendor, luck, guesswork or the watchman."
+        caption:
+          en: "How do people find a seller today? A wholesaler or a shop, you visit or call. A street vendor, you leave to luck, or ask the watchman."
+          hi: "आज लोग विक्रेता तक कैसे पहुँचते हैं? थोक या दुकान पर आप जाते हैं या फोन करते हैं। फेरीवाले के लिए किस्मत, या चौकीदार से पूछना।"
+          mr: "आज लोक विक्रेत्यापर्यंत कसे पोहोचतात? घाऊक किंवा दुकानात तुम्ही जाता किंवा फोन करता. फेरीवाल्यासाठी नशीब, किंवा वॉचमनला विचारणे."
+
+      - alt: "The same chart. The digital discovery row now shows Indiamart and Alibaba for wholesale and Just Dial for shops. The street vendor column is empty."
+        caption:
+          en: "Wholesalers and shops can already be found online."
+          hi: "थोक व्यापारी और दुकानें पहले से ऑनलाइन मिल जाती हैं।"
+          mr: "घाऊक व्यापारी आणि दुकाने आधीच ऑनलाइन सापडतात."
+
+      - alt: "The same chart. The digital tracking row now shows quick commerce for shops. The street vendor column is still empty above the bottom row."
+        caption:
+          en: "Shops went one step further: quick commerce shows where your order is."
+          hi: "दुकानें एक कदम आगे गईं: क्विक कॉमर्स दिखाता है कि आपका ऑर्डर कहाँ है।"
+          mr: "दुकाने एक पाऊल पुढे गेली: क्विक कॉमर्स तुमची ऑर्डर कुठे आहे ते दाखवते."
+
+      - alt: "The same chart. GhantiGo now fills the street vendor column across digital discovery and digital tracking, labelled timetable and last seen today."
+        join: true
+        caption:
+          en: "The street vendor had neither. GhantiGo gives them a timetable, and shows where each was last seen today."
+          hi: "फेरीवाले के पास दोनों नहीं थे। GhantiGo उन्हें टाइमटेबल देता है, और दिखाता है कि आज कौन आख़िरी बार कहाँ दिखा।"
+          mr: "फेरीवाल्याकडे दोन्ही नव्हते. GhantiGo त्यांना वेळापत्रक देते, आणि आज कोण शेवटचे कुठे दिसले ते दाखवते."

@@ -2,6 +2,7 @@
 layout: default
 ---
 {%- assign hero = site.data.hero -%}
+{%- assign explainer = site.data.explainer -%}
 {%- assign ghanti = site.data.challenges -%}
 {%- assign day = site.data.day -%}
 {%- assign bento = site.data.bento -%}
@@ -44,6 +45,27 @@ layout: default
     </div>
     {% endfor %}
 </div>
+
+<section class="section explainer">
+    <div class="wrap">
+        <p class="label">{{ explainer.label }}</p>
+        <h2 class="title reveal">{{ explainer.title }}</h2>
+        <ol class="explainer-panels">
+            {% for panel in explainer.panels %}
+            <li class="explainer-panel reveal">
+                <div class="explainer-art">{% include explainer_art.html name=panel.key alt=panel.alt %}</div>
+                <p class="explainer-no" aria-hidden="true">0{{ forloop.index }}</p>
+                <h3 class="explainer-caption">{{ panel.caption }}</h3>
+                <p class="explainer-hindi" lang="hi">{{ panel.hindi }}</p>
+            </li>
+            {% endfor %}
+        </ol>
+        <p class="explainer-links">
+            <a class="explainer-more" href="{{ explainer.watch.href | relative_url }}">{{ explainer.watch.label }}{% include path_icon.html name="arrow" size=18 %}</a>
+            <a class="explainer-more" href="{{ explainer.more.href }}">{{ explainer.more.label }}{% include path_icon.html name="arrow" size=18 %}</a>
+        </p>
+    </div>
+</section>
 
 <section class="section ghanti">
     <div class="wrap">
