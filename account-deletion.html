@@ -3,48 +3,37 @@ layout: legal
 title: "Account Deletion"
 permalink: /account-deletion/
 data_key: privacy_policy
+scripts:
+  - /assets/js/deletion.js
 ---
 
-<h2>How to Delete Your Account</h2>
-<p>{{ site.data.site.app_name }} respects your right to delete your account and associated data. You can request permanent deletion of your account by email, as described below.</p>
+<h2>Delete Your Account</h2>
+<p>Use this form to permanently delete your {{ site.data.site.app_name }} account: the resident app, the Partner app or the Camp app. You do not need the app installed. We send a code by text message to the number on the account, so only the owner of the number can delete it.</p>
 
-<div class="deletion-path">
-  <p>In the resident or peddler app, <strong>{{ site.data.legal.account_deletion.in_app_path | join: " > " }}</strong> brings you to this page. The GhantiGo Camp app has no such button: camp organisers use the email below. Nothing is deleted until you send a request.</p>
-</div>
+{% include deletion_form.html %}
 
-<h2>Request Deletion by Email</h2>
-<div class="deletion-path">
-  <p>Send an email to <a href="mailto:{{ site.data.legal.account_deletion.email }}">{{ site.data.legal.account_deletion.email }}</a> with the subject line <strong>"Account Deletion Request"</strong>.</p>
-  <p>Please include the following in your email:</p>
-  <ul>
-    <li>Your registered phone number</li>
-    <li>Which account to delete: resident, peddler, or camp organiser (one number can have more than one)</li>
-    <li>Reason for deletion (optional)</li>
-  </ul>
-</div>
+<p>One number can have an account in more than one app. Delete each one separately, by choosing its app above.</p>
 
 <h2>What Gets Deleted</h2>
-<p>When your account is deleted, the following data will be permanently removed:</p>
+<p>When you confirm the code, the following is permanently deleted at once:</p>
 <ul>
-  <li>Profile information</li>
-  <li>Phone number</li>
+  <li>Your phone number, name and profile</li>
   <li>Saved addresses and your chosen locality</li>
-  <li>Photos, posters and voice recordings you uploaded</li>
-  <li>Any peddler location samples still held (these are deleted automatically after {{ site.data.legal.data_retention.location_days }} days in any case)</li>
+  <li>Your requests to a peddler to stop at your society</li>
+  <li>For peddlers and camp organisers: your posts, plans, stops, bell rings, and the photos and voice recordings you uploaded</li>
+  <li>Your sign-in on every phone, and your notification token</li>
 </ul>
+<p>Anything still held on our side is gone within {{ site.data.legal.account_deletion.processing_time }}. Once deleted, it cannot be reversed. You can register again later with the same number, as a new account.</p>
 
-<h2>What May Be Retained</h2>
-<p>Certain data may be retained to comply with legal obligations:</p>
+<h2>What We Keep, and Why</h2>
 <ul>
-  <li>Security logs (retained for {{ site.data.legal.data_retention.security_logs_days }} days per DPDP Rules 2025)</li>
-  <li>The record of a peddler's in-person verification, kept as an audit record</li>
-  <li>Usage and crash events, until they reach the end of the retention period in our <a href="/privacy-policy/">Privacy Policy</a></li>
-  <li>Anything we must keep to meet legal obligations or resolve disputes, for up to {{ site.data.legal.data_retention.account_data_after_deletion_days }} days</li>
+  <li>Security and audit records, kept for {{ site.data.legal.data_retention.security_logs_days }} days (the minimum under the DPDP Rules 2025). Your name and number are already removed from them.</li>
+  <li>Usage and crash events, which are no longer linked to you. They follow the retention period in our <a href="/privacy-policy/">Privacy Policy</a>.</li>
+  <li>Database backups are overwritten on a 7-day cycle, so a deleted account can remain in an old backup for up to 7 days.</li>
 </ul>
 
-<h2>Processing Time</h2>
-<p>Account deletion requests are processed within {{ site.data.legal.account_deletion.processing_time }}. We reply to confirm we have received your request, and again when the deletion is done.</p>
-<p><strong>Note:</strong> Once deletion is processed, it cannot be reversed.</p>
+<h2>Captains, and Numbers You Have Lost</h2>
+<p>Captain accounts are set up by an administrator and cannot be deleted here. If you are a captain, or you no longer have the number on your account, email <a href="mailto:{{ site.data.legal.account_deletion.email }}">{{ site.data.legal.account_deletion.email }}</a> from the address we have for you, with your name and the app, and we will help.</p>
 
 <h2>Contact Us</h2>
 <p>For questions about account deletion, contact <a href="mailto:{{ site.data.site.contact_email }}">{{ site.data.site.contact_email }}</a>.</p>
