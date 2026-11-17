@@ -27,9 +27,14 @@
         status.className = 'waitlist-status ' + kind;
     }
 
+    function sync() {
+        button.disabled = pending || !form.elements.consent.checked;
+        button.setAttribute('aria-busy', pending ? 'true' : 'false');
+    }
+
     function setPending(on) {
         pending = on;
-        button.disabled = on;
+        sync();
         button.textContent = on ? button.getAttribute('data-sending') : label;
     }
 
@@ -81,6 +86,10 @@
             say(text.failed, 'error');
         });
     }
+
+    form.elements.consent.addEventListener('change', sync);
+    form.addEventListener('reset', function () { setTimeout(sync, 0); });
+    sync();
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
