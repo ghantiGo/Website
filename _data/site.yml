@@ -7,12 +7,12 @@ tagline: "Mohalle ka timetable."
 
 # Company details (must match Google Play Console registration and DLT records exactly)
 company_name: "Visible Chain Technologies Private Limited"
-registered_address: "[UPDATE: Add registered office address]" # Required for legal pages and DLT
+registered_address: "Flat 504 Bldg D Plenum Park, Keshav Nagar, Mundhva, Pune 411036, Maharashtra, India" # Required for legal pages and DLT
 cin: "U62010PN2024PTC235236" # Corporate Identification Number (required for DLT)
 duns: "767598484"
 
 # Contact (update with real values before publishing)
-contact_email: "[UPDATE: support@ghantigo.com]" # Update with actual support email
+contact_email: "support@ghantigo.com"
 contact_phone: "+919271237273"
 
 # URLs (update with real values)

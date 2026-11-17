@@ -10,6 +10,7 @@ layout: default
         {% if legal_data.effective_date %}Effective Date: {{ legal_data.effective_date }}{% endif %}
         {% if legal_data.effective_date and legal_data.last_updated %} | {% endif %}
         {% if legal_data.last_updated %}Last Updated: {{ legal_data.last_updated }}{% endif %}
+        {% if legal_data.version %} | Version {{ legal_data.version }}{% endif %}
     </p>
     {% endif %}
     {% endif %}
