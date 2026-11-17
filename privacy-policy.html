@@ -90,8 +90,41 @@ data_key: privacy_policy
     "Share app usage with Google Analytics" on the Account or Profile screen lets Google Firebase
     Analytics count, while it is on, that the app was opened and how long it was used, tied to an identifier of the
     app installation and your phone model, Android version and approximate region. We send no
-    account identifier, phone number, name or custom events, and we do not collect advertising
-    identifiers. Signing out turns the switch off, and you can turn it off at any time.
+    account identifier, phone number, name, photo, voice recording or typed text, and we do not collect
+    advertising identifiers. Signing out turns the switch off, and you can turn it off at any time.
+</p>
+<p>
+    While the switch is on, the apps also send the following events and properties. Each is a
+    count or a coarse label, never the content itself.
+</p>
+<ul>
+    <li>
+        <strong>All three apps:</strong> sign-in by phone (<code>login</code>) and which screen was
+        opened (<code>screen_view</code>).
+    </li>
+    <li>
+        <strong>Resident app:</strong> that a timetable entry was opened (<code>select_content</code>),
+        that you asked a peddler to stop (<code>ask_to_stop</code>), and the code of your locality
+        (<code>locality_code</code>, kept as a property of the installation).
+    </li>
+    <li>
+        <strong>Peddler app:</strong> that the profile was first saved (<code>sign_up</code>); going online
+        (<code>go_online</code>), the reason a go-online was refused (<code>go_online_refused</code>), and going
+        offline, by you or by expiry (<code>go_offline</code>); ringing a bell and whether it got through
+        (<code>ring_bell</code>); that a photo or voice note was posted, and which kind (<code>post_media</code>);
+        that stops were filed, for today or a later day, as a route or a stand, in a count band of 0, 1, 2 to 3 or
+        4 or more, and whether none, some or all carry a time (<code>file_stops</code>); and, as properties of the
+        installation, the code of the locality you are in (<code>locality_code</code>) and your membership
+        level, draft, basic or pro (<code>membership_tier</code>).
+    </li>
+    <li>
+        <strong>Camp app:</strong> that a camp event was created (<code>create_event</code>). It carries no
+        locality.
+    </li>
+</ul>
+<p>
+    These events do not carry the photo, the recording, the stops' names or positions, the times you set, or
+    any identifier of your account.
 </p>
 <p>
     The apps also register a Firebase Cloud Messaging token for your device and store it with your
