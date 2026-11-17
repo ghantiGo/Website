@@ -58,7 +58,7 @@
     </div>
     <input type="hidden" name="notice_version" value="{{ w.notice_version }}">
 
-    <button type="submit" class="btn waitlist-submit" data-sending="{{ w.sending_text }}">{{ w.submit_text }}</button>
+    <button type="submit" class="btn waitlist-submit" disabled data-sending="{{ w.sending_text }}">{{ w.submit_text }}</button>
     <p class="waitlist-status" id="wl-status" role="status" aria-live="polite"></p>
     <noscript><p class="waitlist-status">{{ w.noscript }}</p></noscript>
     <script type="application/json" id="wl-messages">{{ w.messages | jsonify }}</script>

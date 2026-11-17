@@ -1,5 +1,5 @@
 # The waitlist form. The one thing we send, once, is an SMS when the apps launch.
-# consent_label and notice_version are placeholders until counsel supplies the wording; the build check fails on "[UPDATE".
+# notice_version names the wording of consent_label; it is bumped whenever consent_label changes.
 
 title: "Be first in your lane."
 subtitle: "Free. Leave your mobile number. One SMS when the app launches in Pune."
@@ -51,7 +51,7 @@ sending_text: "Sending…"
 noscript: "Turn on JavaScript to join the waitlist, or call us on the number below."
 
 notice_version: "v2"
-consent_label: "[UPDATE: consent wording from counsel]"
+consent_label: "I agree to be contacted by GhantiGo about the app launch. I agree to the <a href=\"/terms/\">Terms of Service</a> and <a href=\"/privacy-policy/\">Privacy Policy</a>, and I am 18 or older."
 
 messages:
   success: "You're on the list. We will tell you when the app launches in Pune."

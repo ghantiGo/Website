@@ -9,15 +9,15 @@
 
 # Grievance Officer (mandatory under the DPDP Act)
 grievance_officer:
-  name: "[UPDATE: Grievance Officer full name]"
+  name: "Sandesh Soni"
   designation: "Grievance Officer"
-  email: "[UPDATE: grievance@ghantigo.com]"
-  response_time: "90 days" # Maximum under DPDP Act
+  email: "support@ghantigo.com"
+  response_time: "Acknowledged within 24 hours, resolved within 15 days" # IT Rules 2021
 
 # Account deletion
 account_deletion:
   # Only for captains, who are appointed by an admin, and for anyone who has lost their number.
-  email: "[UPDATE: delete@ghantigo.com]"
+  email: "support@ghantigo.com"
   # Personal data is erased at once when the code is confirmed; this is the promised outer limit.
   processing_time: "30 days"
   # The resident, partner and Camp apps each have a quiet "Delete account" row
@@ -49,9 +49,11 @@ data_retention:
 
 # Policy dates — bumped when the substance changes.
 privacy_policy:
+  version: "2"
   effective_date: "2026-08-13"
-  last_updated: "2026-11-17"
+  last_updated: "2026-11-18"
 
 terms:
+  version: "2"
   effective_date: "2026-08-13"
-  last_updated: "2026-10-26"
+  last_updated: "2026-11-18"
