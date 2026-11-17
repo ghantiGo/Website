@@ -81,10 +81,21 @@ data_key: privacy_policy
 
 <h3>h. Usage and Crash Data</h3>
 <p>
-    The apps send us first-party usage events: screens viewed, actions taken, a session identifier,
-    the app version and your operating system (for example Android), together with your account
-    identifier and account type. If the app crashes, we receive the error message and technical
-    stack trace. We do not collect your device model or advertising identifiers.
+    If the app crashes, a crash report goes to Google Firebase Crashlytics: the error message, the
+    technical stack trace, the app version, your phone model and Android version, and an
+    identifier of the app installation. It does not include your phone number or name.
+</p>
+<p>
+    Usage counts are <strong>off until you turn them on</strong>. In the apps, the switch
+    "Share app usage with Google Analytics" on the Account or Profile screen lets Google Firebase
+    Analytics count that the app was opened and how long it was used, tied to an identifier of the
+    app installation and your phone model, Android version and approximate region. We send no
+    account identifier, phone number, name or custom events, and we do not collect advertising
+    identifiers. Signing out turns the switch off, and you can turn it off at any time.
+</p>
+<p>
+    The apps also register a Firebase Cloud Messaging token for your device and store it with your
+    sign-in. We do not send push notifications today.
 </p>
 <p>
     Our servers also keep technical logs (access times and errors), and we record that a photo or
@@ -121,7 +132,10 @@ data_key: privacy_policy
         <strong>Requests and notes:</strong> To let residents ask a peddler to stop at their society.
     </li>
     <li>
-        <strong>Usage and Crash Data:</strong> To fix errors, understand how the apps are used and improve them.
+        <strong>Crash Data:</strong> To fix errors and improve the apps.
+    </li>
+    <li>
+        <strong>Usage Counts (only if you turn them on):</strong> To count how many people use the apps.
     </li>
     <li>
         <strong>Communications:</strong> To answer your questions and resolve support requests.
@@ -155,14 +169,22 @@ data_key: privacy_policy
     it your account details.
 </p>
 
+<h3>d. Google Firebase</h3>
+<p>
+    We use <strong>{{ site.data.legal.third_parties.firebase }}</strong>, a service of Google, for crash
+    reports (Crashlytics), for usage counts if you switch them on (Analytics), and for the device
+    token (Cloud Messaging). Google receives the data described in section 2h and processes it for
+    us. Firebase Analytics is switched off in the apps until you turn it on.
+</p>
+
 <p>
     We require service providers to process your data only as instructed by us and in compliance with
     applicable data protection laws.
 </p>
 <p>
-    <strong>We do not use any third-party analytics or advertising SDK.</strong> Usage analytics are
-    collected first-party, on our own infrastructure, and are never sold or shared with advertisers.
-    We do not integrate a payment processor, because the apps are free to use.
+    <strong>We do not use any advertising SDK</strong> and do not collect advertising identifiers. Your
+    data is never sold or shared with advertisers. We do not integrate a payment processor, because
+    the apps are free to use.
 </p>
 
 <h2>5. Data Security</h2>
@@ -202,9 +224,8 @@ data_key: privacy_policy
         {{ site.data.legal.data_retention.location_days }} days after collection.
     </li>
     <li>
-        <strong>Usage and Crash Data:</strong> Kept in full for
-        {{ site.data.legal.data_retention.usage_days }} days, then moved unchanged to an archive and
-        deleted once it is {{ site.data.legal.data_retention.usage_archive_days }} days old.
+        <strong>Crash and Usage Data held by Google Firebase:</strong> Kept for the period set in our
+        Firebase project, and deleted by Firebase after it. [UPDATE: state the period chosen in the Firebase console]
     </li>
     <li>
         <strong>Security Logs:</strong> Retained for {{ site.data.legal.data_retention.security_logs_days }}
@@ -252,6 +273,11 @@ data_key: privacy_policy
     requesting deletion of your account, subject to the provisions of the Digital Personal Data
     Protection Act, 2023 (DPDP Act). Withdrawal of consent does not affect the lawfulness of
     processing carried out before withdrawal.
+</p>
+<p>
+    Sharing usage with Google Analytics needs a separate, optional consent that you give by turning
+    on the switch in the app. You can withdraw it at any time by turning the switch off; collection
+    stops at once.
 </p>
 
 <h3>Your Rights as a Data Principal</h3>
