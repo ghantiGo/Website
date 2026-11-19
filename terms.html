@@ -58,15 +58,16 @@ data_key: terms
 
 <h2>4. Fees and Plans</h2>
 <p>
-  {{ site.data.site.app_name }} is currently <strong>free to use</strong>. We do not charge for downloading the App,
-  creating an account, going live, or receiving alerts. Peddlers are on one of two plans:
+  We do not charge for downloading the App, creating an account, going live, or receiving alerts. Peddlers are on one of three plans:
 </p>
 <ul>
-  <li><strong>{{ site.data.plans.free.title }}:</strong> up to {{ site.data.plans.free.monthly_distance_km }} km of travel a month.</li>
-  <li><strong>{{ site.data.plans.pro.title }}:</strong> up to {{ site.data.plans.pro.monthly_distance_km }} km of travel a month.</li>
+  <li><strong>{{ site.data.plans.free.title }}:</strong> no charge. Up to {{ site.data.plans.free.monthly_distance_km }} km of coverage a month.</li>
+  <li><strong>{{ site.data.plans.go.title }}:</strong> Rs {{ site.data.plans.go.price_inr }} a month. Up to {{ site.data.plans.go.monthly_distance_km }} km of coverage a month.</li>
+  <li><strong>{{ site.data.plans.super.title }}:</strong> Rs {{ site.data.plans.super.price_inr }} a month. Up to {{ site.data.plans.super.monthly_distance_km }} km of coverage a month, with analytics, wider reach and a week of plan-ahead.</li>
 </ul>
 <p>
-  If we introduce a paid plan or feature, we will show the price <strong>before</strong> you purchase and will never
+  Active KYC is compulsory for the {{ site.data.plans.go.title }} and {{ site.data.plans.super.title }} plans. Coverage is the
+  distance you have covered in the calendar month. We show the price <strong>before</strong> you purchase and never
   charge your account without an explicit action by you. You do not need to buy anything to keep using the free plan.
 </p>
 
