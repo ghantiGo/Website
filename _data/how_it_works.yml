@@ -33,7 +33,7 @@ apps:
     app: "GhantiGo Partner"
     verb: "Fill it."
     verb_hindi: "भरो।"
-    note: "In English and Hindi. Joining is free. Our local team can check you in person for a Verified badge, and we keep no documents. Pro, a paid upgrade to plan up to a week ahead, is coming soon."
+    note: "In English and Hindi. Joining is free. Our local team can check you in person for a Verified badge, and we keep no documents. GO and SUPER are paid monthly plans, and active KYC is compulsory for both. SUPER lets you plan up to a week ahead."
     steps:
       - heading: "Photos & voice note"
         hindi: "फोटो और आवाज़"
